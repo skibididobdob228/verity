@@ -1,0 +1,38 @@
+# the lab as in episode 3: the staff room and the support line, the names room outburst, the machine that only works one way
+wait 140
+cmd time set 3000
+cmd verity stage lab
+wait 170
+cmd verity labtp staff
+wait 60
+shot K1_staff
+wait 200
+shot K2_note
+wait 500
+shot K2b_support
+chat 2
+wait 260
+shot K2c_support_2
+cmd verity labtp names
+wait 30
+shot K3_names
+wait 90
+shot K4_outburst
+wait 200
+shot K5_sorry
+cmd verity labtp machine
+wait 60
+cmd verity use lever
+wait 40
+shot K6_send
+wait 140
+shot K7_gone
+wait 120
+shot K8_glass
+wait 30
+shot K9_through
+wait 300
+shot K10_talk
+wait 900
+shot K11_choice
+quit

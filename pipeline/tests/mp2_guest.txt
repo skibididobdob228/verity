@@ -1,0 +1,15 @@
+# multiplayer 2, the guest: sees its own hallucinations, asks at the same moment as the host, then gets Verity
+wait 120
+chat Верити, где тут деревня?
+wait 200
+cmd verity sanity see balls
+wait 30
+shot m2g_1_my_hallucinations
+wait 420
+shot m2g_2
+wait 100
+hold
+wait 40
+shot m2g_3_holding_verity
+wait 400
+quit

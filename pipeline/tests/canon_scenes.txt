@@ -1,0 +1,46 @@
+# scenes from the series: a cow's moo, the face, the song, Twixxel's visit and night, the support line, the recordings
+wait 110
+cmd time set 1000
+cmd weather clear
+cmd verity stage possessive
+wait 40
+hold
+chat Верити, какой звук издаёт корова?
+wait 80
+chat Верити, у тебя лицо изменилось?
+wait 120
+shot c1_face
+chat Верити, включи музыку
+wait 160
+cmd verity friend
+wait 400
+shot c2_friend_math
+wait 700
+shot c3_friend_channel
+cmd time set 11900
+wait 520
+shot c4_where
+cmd verity friend
+wait 200
+shot c5_taken
+cmd tp @s ~ ~ ~ 0 60
+wait 20
+shot c6_lectern
+chat Верити, соедини меня со службой поддержки
+wait 360
+shot c7_support
+chat 3
+wait 200
+chat я хочу, чтобы он оставил меня в покое
+wait 300
+shot c8_hold
+wait 500
+shot c9_operator
+wait 300
+shot c10_back
+chat Верити, а кто был до меня?
+wait 200
+shot c11_recordings
+wait 500
+shot c12_recordings_end
+quit

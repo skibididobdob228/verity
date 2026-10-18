@@ -1,0 +1,49 @@
+# caught from behind in survival: the jumpscare
+wait 80
+cmd tp @s 0.5 -60 0.5 0 0
+cmd time set 18000
+cmd gamemode survival
+cmd verity stage hunt
+wait 200
+shot j00
+wait 16
+shot j01
+wait 16
+shot j02
+wait 12
+shot j03
+wait 10
+shot j04
+wait 8
+shot j05
+wait 6
+shot j06
+wait 6
+shot j07
+wait 6
+shot j08
+wait 6
+shot j09
+wait 6
+shot j10
+wait 6
+shot j11
+wait 6
+shot j12
+wait 6
+shot j13
+wait 6
+shot j14
+wait 6
+shot j15
+wait 6
+shot j16
+wait 6
+shot j17
+wait 30
+shot j18
+wait 60
+shot j19_after
+wait 150
+shot j20_morning
+quit

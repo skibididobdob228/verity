@@ -1,0 +1,48 @@
+# does he know what is going on? (normal world, seed 7)
+wait 110
+cmd time set 9000
+cmd weather clear
+cmd tp @s ~ ~ ~ 90 4
+cmd gamemode survival
+cmd verity stage helper
+wait 20
+hold
+cmd give @s minecraft:iron_pickaxe
+cmd give @s minecraft:bread 5
+cmd give @s minecraft:torch 12
+cmd summon minecraft:cow ~-4 ~ ~
+cmd summon minecraft:zombie ~-9 ~ ~2 {NoAI:1b,PersistenceRequired:1b}
+wait 40
+chat Меня зовут Миша, и я строю дом из берёзы. Запомни это.
+wait 160
+shot x1_fact
+cmd damage @s 5 minecraft:fall
+wait 30
+cmd advancement grant @s only minecraft:story/mine_stone
+wait 30
+chat Что сейчас вокруг меня? Мне что-нибудь угрожает?
+wait 190
+shot x2_around
+chat А что у меня с собой, хватит ли еды?
+wait 190
+shot x3_inventory
+chat Что со мной только что случилось?
+wait 190
+shot x4_events
+slot 4
+cmd verity drop
+wait 60
+cmd verity pickup
+wait 80
+chat Напомни, как меня зовут и что я строю?
+wait 190
+shot x5_memory
+cmd verity context
+wait 20
+shot x6_context
+cmd verity summarize
+wait 260
+cmd verity context
+wait 20
+shot x7_context_after_summary
+quit

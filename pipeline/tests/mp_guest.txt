@@ -1,0 +1,17 @@
+# multiplayer, the second player
+wait 100
+shot mg1_host_holds_verity
+wait 60
+chat Привет, Верити! Я гость. Поможешь мне найти алмазы?
+wait 170
+shot mg2_answer_to_guest
+wait 500
+shot mg3_jealousy
+wait 190
+shot mg4_ball_dropped
+wait 500
+shot mg5_hunt
+wait 100
+shot mg6_hunt
+wait 400
+quit

@@ -1,0 +1,58 @@
+# first look: the ball, its expressions, the monster
+wait 60
+cmd time set noon
+cmd tp @s 0.5 -60 0.5 0 0
+gui off
+wait 10
+cmd verity summon ball
+cmd verity anchor 0.5 -58.4 1.9
+wait 50
+shot s1_ball_happy
+cmd verity emotion grin
+wait 15
+shot s1_ball_grin
+cmd verity emotion angry
+wait 15
+shot s1_ball_angry
+cmd verity emotion sad
+wait 15
+shot s1_ball_sad
+cmd verity emotion surprised
+wait 15
+shot s1_ball_surprised
+cmd verity emotion neutral
+wait 15
+shot s1_ball_neutral
+cmd verity emotion creepy
+wait 15
+shot s1_ball_creepy
+cmd verity emotion teeth
+wait 15
+shot s1_ball_teeth
+cmd verity emotion happy
+talk on
+wait 13
+shot s1_ball_talk1
+wait 3
+shot s1_ball_talk2
+talk off
+cmd verity clear
+wait 5
+cmd tp @s 0.5 -60 0.5 0 -12
+cmd verity summon monster
+wait 5
+cmd tp @s 0.5 -60 -6.5 0 -14
+wait 40
+shot s1_monster_idle
+cmd verity monsterstate 2
+wait 20
+shot s1_monster_scream
+cmd tp @s 3.5 -57 1.5 60 -22
+wait 20
+shot s1_monster_face
+cmd verity clear
+cmd tp @s 0.5 -60 0.5 0 10
+cmd verity summon box
+wait 30
+shot s1_box
+quit

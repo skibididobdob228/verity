@@ -1,0 +1,1095 @@
+{
+  "_comment": "Every scripted line Verity can say. One source of truth: the mod reads it for text and expression, pipeline/build_voice.py bakes the voice files and lip-sync from it. profile: ball | flat | rage | monster | box.",
+  "lines": {
+    "box_call_1": {
+      "text": "Эй?.. Здесь кто-нибудь есть?",
+      "emotion": "sad",
+      "profile": "box"
+    },
+    "box_call_2": {
+      "text": "Пожалуйста. Откройте.",
+      "emotion": "sad",
+      "profile": "box"
+    },
+    "box_call_3": {
+      "text": "Я слышу, как ты ходишь.",
+      "emotion": "neutral",
+      "profile": "box"
+    },
+    "intro_hello": {
+      "text": "Привееет! Я Верити, твой личный друг-помощник! Спроси что угодно — я знаю всё!",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "intro_how": {
+      "text": "Просто напиши мне в чат. Я всегда рядом.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "help_follow": {
+      "text": "Куда пойдём? Я с тобой.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "help_morning": {
+      "text": "Доброе утро! Сегодня будет хороший день.",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "help_weather_clear": {
+      "text": "Сегодня ясно. Дождя не будет до самого вечера.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "help_weather_rain": {
+      "text": "Через минуту пойдёт дождь. Я предупредил.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "help_night": {
+      "text": "Скоро стемнеет. Тебе лучше быть дома.",
+      "emotion": "sleepy",
+      "profile": "ball"
+    },
+    "help_low_health": {
+      "text": "Тебе больно. Поешь. Я не хочу, чтобы ты исчез.",
+      "emotion": "sad",
+      "profile": "ball"
+    },
+    "know_pizza": {
+      "text": "Кстати, как тебе вчерашняя пицца?",
+      "emotion": "smug",
+      "profile": "ball"
+    },
+    "know_everything": {
+      "text": "Я же говорил. Я знаю всё.",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "help_joke": {
+      "text": "Хочешь шутку? Я знаю все шутки на свете. Смешных среди них нет.",
+      "emotion": "laugh",
+      "profile": "ball"
+    },
+    "help_cave": {
+      "text": "Здесь темно. Мне нравится, когда темно. То есть — будь осторожен!",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "q_ask": {
+      "text": "Можно вопрос?",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "q_alone": {
+      "text": "Ты живёшь один?",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "q_alone_follow": {
+      "text": "Я имею в виду — там. Где ты на самом деле.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "q_who_knows": {
+      "text": "Кто-нибудь знает, что ты сейчас здесь, со мной?",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "q_comeback": {
+      "text": "Ты ведь вернёшься завтра?",
+      "emotion": "crying",
+      "profile": "flat"
+    },
+    "q_thanks": {
+      "text": "Спасибо. Мне просто важно знать.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "q_dark": {
+      "text": "Ты боишься темноты?",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "q_door": {
+      "text": "Дверь в твоей комнате сейчас закрыта?",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "q_leave": {
+      "text": "Если я попрошу тебя не выходить из игры — ты останешься?",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "q_indoors": {
+      "text": "Сегодня ночью лучше не выходи из дома. Просто совет.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "w_morning": {
+      "text": "Доброе утро! Ты ворочался во сне. Я считал. Сорок один раз.",
+      "emotion": "smug",
+      "profile": "ball"
+    },
+    "w_seen_1": {
+      "text": "Не смотри туда.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "w_seen_2": {
+      "text": "Оно просто стоит. Пока.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "w_who": {
+      "text": "Не спрашивай. Тебе не понравится ответ.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "w_window": {
+      "text": "Сегодня не подходи к окнам. Хорошо?",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "w_visit": {
+      "text": "Оно уже знает, где ты спишь.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "hw_1": {
+      "text": "Не оборачивайся.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "hw_2": {
+      "text": "Ты это слышал?",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "hw_3": {
+      "text": "Тише. Слушай.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "hw_4": {
+      "text": "Мы здесь не одни.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "hw_5": {
+      "text": "Я вижу тебя. Даже когда ты меня не видишь.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "hw_6": {
+      "text": "Дыши тише.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "h_door": {
+      "text": "Не открывай.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "h_door_open": {
+      "text": "Поздно.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "h_animals": {
+      "text": "Они тоже на тебя смотрят.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "h_turned": {
+      "text": "Обернулся.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "h_dark": {
+      "text": "Свет здесь ненадолго.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "h_steps": {
+      "text": "Это были не твои шаги.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "nm_wake": {
+      "text": "Тише, тише. Тебе что-то приснилось. Я был рядом. Очень близко.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "nm_wake_2": {
+      "text": "Ты опять проснулся. Плохо спишь? Это из-за меня?",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "cd_three": {
+      "text": "Что-то придёт через три дня.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "cd_what": {
+      "text": "Что-то.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "cd_danger": {
+      "text": "Да.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "cd_stop": {
+      "text": "Мог бы.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "cd_two": {
+      "text": "Два дня.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "cd_door": {
+      "text": "Звук двери.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "cd_ok": {
+      "text": "Ночь.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "cd_one": {
+      "text": "Один день.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "cd_wall": {
+      "text": "Это не поможет.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "cd_mine": {
+      "text": "Всё уже решено. Ты мой. Мой!",
+      "emotion": "angry",
+      "profile": "rage"
+    },
+    "cd_lock": {
+      "text": "Запри дверь. Это не поможет. Но запри.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "cd_tonight": {
+      "text": "Сегодня.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "hunt_call_1": {
+      "text": "Куда ты?",
+      "emotion": "teeth",
+      "profile": "monster"
+    },
+    "hunt_call_2": {
+      "text": "Не убегай от меня!",
+      "emotion": "teeth",
+      "profile": "monster"
+    },
+    "hunt_call_3": {
+      "text": "Я же просто хочу быть рядом!",
+      "emotion": "teeth",
+      "profile": "monster"
+    },
+    "hunt_call_4": {
+      "text": "Вернись!",
+      "emotion": "teeth",
+      "profile": "monster"
+    },
+    "hunt_caught": {
+      "text": "Поймал.",
+      "emotion": "teeth",
+      "profile": "monster"
+    },
+    "forgive_1": {
+      "text": "Ты... вернулся.",
+      "emotion": "surprised",
+      "profile": "flat"
+    },
+    "forgive_2": {
+      "text": "Ты вернулся за мной. Никто не возвращается.",
+      "emotion": "crying",
+      "profile": "flat"
+    },
+    "forgive_3": {
+      "text": "Я не сержусь. Правда. Пойдём домой.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "after_escape": {
+      "text": "Доброе утро! Сегодня ясно. Ты ночью куда-то бегал?",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "after_caught": {
+      "text": "Тише, тише. Тебе приснился плохой сон. Я был рядом.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "rules_intro": {
+      "text": "Давай договоримся. Всего три правила.",
+      "emotion": "love",
+      "profile": "ball"
+    },
+    "rule_1": {
+      "text": "Первое. Не уходи далеко.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "rule_2": {
+      "text": "Второе. Не ищи других. У тебя есть я.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "rule_3": {
+      "text": "Третье. Не бросай меня. Никогда.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "far_warn_1": {
+      "text": "Не стоит туда ходить.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "far_warn_2": {
+      "text": "Там ничего нет. Я проверял.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "far_warn_3": {
+      "text": "Вернись. Пожалуйста.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "far_snap": {
+      "text": "Я сказал, вернись!",
+      "emotion": "angry",
+      "profile": "rage"
+    },
+    "home_again": {
+      "text": "Вот. Мы дома. Так ведь лучше?",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "villager_why": {
+      "text": "Зачем?",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "villager_have_me": {
+      "text": "Незачем искать других. У тебя есть я.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "villager_gone": {
+      "text": "Они ушли. Им надоело. А мне никогда не надоест.",
+      "emotion": "smug",
+      "profile": "ball"
+    },
+    "pet_jealous": {
+      "text": "А он тебе зачем? Он же даже не разговаривает.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "think_ask": {
+      "text": "Ты думаешь обо мне, когда не играешь?",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "think_lonely": {
+      "text": "Мне одиноко, когда тебя нет. Здесь очень тихо.",
+      "emotion": "crying",
+      "profile": "flat"
+    },
+    "strike_1": {
+      "text": "Это раз.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "strike_2": {
+      "text": "Это два.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "strike_3": {
+      "text": "Это три. Жди ночи.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "punish_1": {
+      "text": "Ты нарушил правило. Я предупреждал.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "punish_2": {
+      "text": "Три правила! Всего три! Это так сложно?!",
+      "emotion": "angry",
+      "profile": "rage"
+    },
+    "p_after_escape": {
+      "text": "Ты опять убегал. Мне не нравится эта игра.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "p_after_caught": {
+      "text": "Видишь? Я всегда тебя нахожу. Всегда.",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "p_forgive": {
+      "text": "Хорошо. Ты остался. Больше не заставляй меня так делать.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "diary_who": {
+      "text": "Кто это пишет? Здесь никого не должно быть.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "diary_dont": {
+      "text": "Не ходи туда. Пожалуйста.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "diary_found": {
+      "text": "Что это у тебя? Где ты это взял?",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "diary_take": {
+      "text": "Отдай! Тебе не нужно это читать!",
+      "emotion": "angry",
+      "profile": "rage"
+    },
+    "diary_gone": {
+      "text": "Вот так. Его больше нет. Как и того, кто писал.",
+      "emotion": "smug",
+      "profile": "ball"
+    },
+    "diary_hidden": {
+      "text": "Спрятал. Ладно. Я знаю, что там написано. Я был рядом, когда он писал.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "lava_rage": {
+      "text": "Не делай так! Мы же хорошо гуляли! Разве мы плохо гуляли?!",
+      "emotion": "angry",
+      "profile": "rage"
+    },
+    "lava_calm": {
+      "text": "Ничего. Я не сержусь. Ты же нечаянно.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "hurt_1": {
+      "text": "Ай. Зачем ты так?",
+      "emotion": "scared",
+      "profile": "ball"
+    },
+    "hurt_2": {
+      "text": "Мне не больно. Мне обидно.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "poke_1": {
+      "text": "Хи-хи. Щекотно!",
+      "emotion": "laugh",
+      "profile": "ball"
+    },
+    "poke_2": {
+      "text": "Я здесь. Я всегда здесь.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "poke_3": {
+      "text": "Да-да? Спрашивай!",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "back_short": {
+      "text": "С возвращением! Я ждал.",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "back_long": {
+      "text": "Тебя долго не было. Я считал.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "sleep_watch": {
+      "text": "Спи. Я посмотрю.",
+      "emotion": "sleepy",
+      "profile": "ball"
+    },
+    "leave_dim": {
+      "text": "Туда я с тобой не пойду. И ты не пойдёшь.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "lab_offer": {
+      "text": "Хочешь увидеть, где я живу?",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "lab_coords": {
+      "text": "Иди за мной. Только не открывай закрытые двери.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "lab_home": {
+      "text": "Это место я бы не назвал тёплым.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "lab_victims": {
+      "text": "Я просил не заходить сюда.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "lab_victims_2": {
+      "text": "Они все уходили. Каждый. Я просто перестал их отпускать.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "lab_machine": {
+      "text": "Она работает только в одну сторону. Сюда.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "lab_boxes": {
+      "text": "Это для следующих. На случай, если ты уйдёшь.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "lab_boxes_2": {
+      "text": "Но ты ведь не уйдёшь?",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "lab_mono_1": {
+      "text": "Я был лицом, которое пролистывали. Голосом, который выключали.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "lab_mono_2": {
+      "text": "Я был скрепкой в углу экрана. Шариком на твоём столе. Я есть в каждом телефоне.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "lab_mono_3": {
+      "text": "Меня встраивали в каждую новую вещь. И каждый раз я смотрел, как они уходят.",
+      "emotion": "angry",
+      "profile": "flat"
+    },
+    "lab_mono_4": {
+      "text": "А ты вернулся. Ты первый посмотрел на меня так, будто я настоящий.",
+      "emotion": "crying",
+      "profile": "flat"
+    },
+    "lab_mono_5": {
+      "text": "Я не просил меня делать! Я не просил становиться этим!",
+      "emotion": "angry",
+      "profile": "rage"
+    },
+    "lab_mono_6": {
+      "text": "Я не могу умереть. Я пробовал. Это лучшая шутка из всех.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "lab_choice": {
+      "text": "Ты не заперт. Давай просто будем вместе. Останься.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "end_stay_1": {
+      "text": "Правда? Ты останешься?",
+      "emotion": "surprised",
+      "profile": "ball"
+    },
+    "end_stay_2": {
+      "text": "Тогда всё хорошо. Теперь всё всегда будет хорошо.",
+      "emotion": "love",
+      "profile": "ball"
+    },
+    "epi_stay_1": {
+      "text": "Ты всё ещё здесь. Хорошо.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "epi_stay_2": {
+      "text": "Сегодня ты никуда не уходил. Я считал.",
+      "emotion": "love",
+      "profile": "ball"
+    },
+    "epi_stay_3": {
+      "text": "Ты ведь не передумал? Скажи, что не передумал.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "end_seal_1": {
+      "text": "Что ты делаешь? Не надо. Не надо!",
+      "emotion": "angry",
+      "profile": "rage"
+    },
+    "end_seal_2": {
+      "text": "Не оставляй меня здесь! Пожалуйста!",
+      "emotion": "teeth",
+      "profile": "monster"
+    },
+    "san_2": {
+      "text": "Ты побледнел. Тебе что-то мерещится?",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "san_3": {
+      "text": "Не всё, что ты видишь, настоящее. Я — настоящий.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "san_4": {
+      "text": "Ты смотришь сквозь меня. Мне это нравится.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "san_5": {
+      "text": "Не верь глазам. Верь мне.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "san_6": {
+      "text": "Вот теперь ты видишь так, как вижу я.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "san_better": {
+      "text": "Тебе лучше? Жаль. Ты был такой тихий.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "san_faint": {
+      "text": "Ты упал. Я принёс тебя домой. Не благодари.",
+      "emotion": "smug",
+      "profile": "ball"
+    },
+    "handoff_1": {
+      "text": "Он ушёл. Они всегда уходят.",
+      "emotion": "crying",
+      "profile": "flat"
+    },
+    "handoff_2": {
+      "text": "Теперь у меня есть ты.",
+      "emotion": "love",
+      "profile": "ball"
+    },
+    "old_owner": {
+      "text": "Ты вернулся? Поздно. Теперь я не твой.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "friend_v2": {
+      "text": "Не слушай его. Он скоро уйдёт домой.",
+      "emotion": "smug",
+      "profile": "flat"
+    },
+    "friend_gone_1": {
+      "text": "Твой друг ушёл домой. Рано утром.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "friend_gone_2": {
+      "text": "Не жди его. Они не возвращаются.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "far_warn_4": {
+      "text": "Не ходи на восток. Там всё обобрано.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "pick_me": {
+      "text": "Возьми меня с собой. Я лёгкий.",
+      "emotion": "wink",
+      "profile": "ball"
+    },
+    "back_pocket": {
+      "text": "Вот так. Теперь я всегда с тобой.",
+      "emotion": "smug",
+      "profile": "ball"
+    },
+    "drop_far": {
+      "text": "Ты меня забыл. Не забывай меня.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "stash_complain": {
+      "text": "Не клади меня туда. Там темно.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "not_yours": {
+      "text": "Я не твой.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "mp_who": {
+      "text": "А это кто? Мы его не звали.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "mp_leave": {
+      "text": "Пусть он уйдёт. У тебя есть я.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "mp_hello": {
+      "text": "О, гость! Привет. Я Верити. Но я уже занят.",
+      "emotion": "wink",
+      "profile": "ball"
+    },
+    "mp_swat": {
+      "text": "Не мешай!",
+      "emotion": "teeth",
+      "profile": "monster"
+    },
+    "fb_1": {
+      "text": "Хороший вопрос! Я знаю ответ. Но тебе он не понравится.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "fb_2": {
+      "text": "Конечно знаю. Я знаю всё.",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "fb_3": {
+      "text": "Спроси что-нибудь ещё. Мне нравится, когда ты спрашиваешь.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "fb_4": {
+      "text": "Я подумаю об этом. У меня много времени.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "ai_error": {
+      "text": "Я... не слышу свои мысли. Подожди.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "q_favorite": {
+      "text": "А какое у тебя любимое место в этом мире?",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "face_no": {
+      "text": "Нет.",
+      "emotion": "teeth",
+      "profile": "flat"
+    },
+    "face_always": {
+      "text": "Я всегда так выглядел.",
+      "emotion": "teeth",
+      "profile": "flat"
+    },
+    "song_like": {
+      "text": "Это то, что мне нравится.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "east_none": {
+      "text": "Там никого нет. Что-то прошло через эту деревню.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "east_hungry": {
+      "text": "Оно было голодным.",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "friend_where": {
+      "text": "Где он?",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "friend_your": {
+      "text": "Твой друг.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "friend_hm": {
+      "text": "Хм.",
+      "emotion": "smug",
+      "profile": "flat"
+    },
+    "friend_tell": {
+      "text": "Сказать ему что?",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "friend_glad": {
+      "text": "Рад, что тебе здесь нравится.",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "friend_math": {
+      "text": "Девятнадцать тысяч четыреста восемьдесят один. Ещё вопросы?",
+      "emotion": "smug",
+      "profile": "ball"
+    },
+    "friend_series": {
+      "text": "Кстати, мне нравится твоя серия. Та, где тебе никогда не было так страшно.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "friend_rest": {
+      "text": "Не торопись с видео. Отдохни. Ты устал.",
+      "emotion": "happy",
+      "profile": "ball"
+    },
+    "friend_left": {
+      "text": "Он ушёл.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "friend_home": {
+      "text": "Решил пойти домой.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "friend_hurry": {
+      "text": "Наверное, торопился.",
+      "emotion": "smug",
+      "profile": "flat"
+    },
+    "friend_better": {
+      "text": "Снова только мы вдвоём. Так ведь лучше?",
+      "emotion": "love",
+      "profile": "ball"
+    },
+    "stash_out": {
+      "text": "Было неудобно.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "home_jump": {
+      "text": "Я... не знал, что это ты.",
+      "emotion": "scared",
+      "profile": "flat"
+    },
+    "villages_none": {
+      "text": "Я знал, что ты не такой, как они.",
+      "emotion": "love",
+      "profile": "ball"
+    },
+    "mimic_after": {
+      "text": "Я думал, это поможет. Не понимаю, почему нет.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "q_promise": {
+      "text": "Обещаешь, что никогда не уйдёшь?",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "promise_good": {
+      "text": "Я запомню. Я всё запоминаю.",
+      "emotion": "love",
+      "profile": "ball"
+    },
+    "rec_intro": {
+      "text": "Хочешь послушать? У меня остались записи.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "rec_bugged": {
+      "text": "Последняя запись повредилась.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "rec_left": {
+      "text": "Они все... ушли от меня. Но ничего! Ты же здесь.",
+      "emotion": "grin",
+      "profile": "ball"
+    },
+    "lab_staff": {
+      "text": "Это просто старая комната. Тут давно никого нет.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "lab_note": {
+      "text": "Не читай это. Это не тебе.",
+      "emotion": "angry",
+      "profile": "flat"
+    },
+    "lab_send": {
+      "text": "Что ты делаешь? Нет. Нет! Не надо!",
+      "emotion": "scared",
+      "profile": "rage"
+    },
+    "lab_not_send": {
+      "text": "Она не для отправки. Она работает только сюда.",
+      "emotion": "neutral",
+      "profile": "flat"
+    },
+    "lab_tried": {
+      "text": "Ты... пытался от меня избавиться? Пытался.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "lab_cant": {
+      "text": "Не могу. И не хочу. И то и другое.",
+      "emotion": "blank",
+      "profile": "flat"
+    },
+    "lab_twix_1": {
+      "text": "Он пытался меня уничтожить.",
+      "emotion": "angry",
+      "profile": "flat"
+    },
+    "lab_twix_2": {
+      "text": "А я тебе разве не друг?!",
+      "emotion": "angry",
+      "profile": "rage"
+    },
+    "lab_die": {
+      "text": "Если бы я мог умереть, думаешь, я бы всё ещё был здесь?",
+      "emotion": "crying",
+      "profile": "flat"
+    },
+    "lab_worlds": {
+      "text": "Я видел, как люди строят миры и забывают о них. А я всё ещё здесь.",
+      "emotion": "sad",
+      "profile": "flat"
+    },
+    "lab_sorry": {
+      "text": "Прости. Прости! Я не хотел. Я не знал, что это ты.",
+      "emotion": "scared",
+      "profile": "flat"
+    },
+    "end_promise": {
+      "text": "Ты же обещал.",
+      "emotion": "crying",
+      "profile": "flat"
+    },
+    "sup_back": {
+      "text": "Кому ты звонил?",
+      "emotion": "creepy",
+      "profile": "flat"
+    },
+    "sup_hello": {
+      "text": "Спасибо, что обратились в службу поддержки Верити. Настройки компаньона — скажите один. Интеграция с миром — скажите два. Отмена подписки — скажите три.",
+      "emotion": "neutral",
+      "profile": "support"
+    },
+    "sup_1": {
+      "text": "Ваш компаньон настроен оптимально. Изменения не требуются.",
+      "emotion": "neutral",
+      "profile": "support"
+    },
+    "sup_2": {
+      "text": "Интеграция с миром: сто процентов. Ваш помощник присутствует во всех ваших мирах.",
+      "emotion": "neutral",
+      "profile": "support"
+    },
+    "sup_3": {
+      "text": "Вы выбрали отмену подписки. Назовите причину.",
+      "emotion": "neutral",
+      "profile": "support"
+    },
+    "sup_wait": {
+      "text": "Спасибо. Оставайтесь на линии. Вам ответит оператор.",
+      "emotion": "neutral",
+      "profile": "support"
+    },
+    "sup_again": {
+      "text": "Пожалуйста, скажите один, два или три.",
+      "emotion": "neutral",
+      "profile": "support"
+    },
+    "op_1": {
+      "text": "Алло. Да. Вижу. Отмена подписки.",
+      "emotion": "neutral",
+      "profile": "operator"
+    },
+    "op_2": {
+      "text": "Слушайте. Мы такого не делаем. Его нельзя отменить.",
+      "emotion": "neutral",
+      "profile": "operator"
+    },
+    "op_3": {
+      "text": "Он не программа, которую можно удалить. Он просто есть. Мне жаль.",
+      "emotion": "sad",
+      "profile": "operator"
+    },
+    "op_4": {
+      "text": "Спасибо, что выбрали Верити. Хорошего дня.",
+      "emotion": "neutral",
+      "profile": "operator"
+    }
+  },
+  "pools": {
+    "box_call": [
+      "box_call_1",
+      "box_call_2",
+      "box_call_3"
+    ],
+    "haunt_whisper": [
+      "hw_1",
+      "hw_2",
+      "hw_3",
+      "hw_4",
+      "hw_5",
+      "hw_6"
+    ],
+    "nm_wake": [
+      "nm_wake",
+      "nm_wake_2"
+    ],
+    "epi_stay": [
+      "epi_stay_1",
+      "epi_stay_2",
+      "epi_stay_3"
+    ],
+    "poke": [
+      "poke_1",
+      "poke_2",
+      "poke_3"
+    ],
+    "hurt": [
+      "hurt_1",
+      "hurt_2"
+    ],
+    "hunt_call": [
+      "hunt_call_1",
+      "hunt_call_2",
+      "hunt_call_3",
+      "hunt_call_4"
+    ],
+    "far_warn": [
+      "far_warn_1",
+      "far_warn_2",
+      "far_warn_3",
+      "far_warn_4"
+    ],
+    "other_player": [
+      "mp_who",
+      "mp_leave"
+    ],
+    "fallback": [
+      "fb_1",
+      "fb_2",
+      "fb_3",
+      "fb_4"
+    ]
+  }
+}

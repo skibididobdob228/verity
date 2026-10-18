@@ -1,0 +1,28 @@
+# the name the player types in on the consent screen: he acknowledges it, the AI uses it, the scare, the rules, the hunt
+wait 80
+cmd tp @s 0.5 -60 0.5 0 0
+cmd time set 6000
+cmd verity stage helper
+wait 30
+consent show
+wait 20
+shot m1_consent
+close
+cmd verity name
+wait 20
+consent yes артём
+wait 830
+shot m2_acknowledged
+chat Привет! Ты помнишь, как меня зовут по-настоящему?
+wait 520
+shot m3_ai
+cmd verity name
+wait 130
+cmd verity stage possessive
+wait 420
+shot m4_rules
+cmd time add 9000
+cmd verity stage hunt
+wait 1000
+shot m5_hunt
+quit

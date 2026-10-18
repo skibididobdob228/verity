@@ -1,0 +1,17 @@
+# daylight b-roll of the monster: walks at the camera, reaches, screams (normal world, seed 7)
+wait 110
+volume 1
+cmd time set 6000
+cmd weather clear
+cmd tp @s ~ ~ ~ 90 -14
+gui off
+cmd summon verity:monster ~-17 ~ ~
+wait 150
+cmd verity monsterstate 1
+wait 62
+cmd verity monsterstate 2
+cmd playsound verity:sfx.scream hostile @s ~ ~ ~ 2
+wait 60
+cmd verity monsterstate 0
+wait 20
+quit

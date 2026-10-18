@@ -1,0 +1,1606 @@
+{
+ "voice.box_call_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/box_call_1"
+   }
+  ]
+ },
+ "voice.box_call_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/box_call_2"
+   }
+  ]
+ },
+ "voice.box_call_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/box_call_3"
+   }
+  ]
+ },
+ "voice.intro_hello": {
+  "sounds": [
+   {
+    "name": "verity:voice/intro_hello"
+   }
+  ]
+ },
+ "voice.intro_how": {
+  "sounds": [
+   {
+    "name": "verity:voice/intro_how"
+   }
+  ]
+ },
+ "voice.help_follow": {
+  "sounds": [
+   {
+    "name": "verity:voice/help_follow"
+   }
+  ]
+ },
+ "voice.help_morning": {
+  "sounds": [
+   {
+    "name": "verity:voice/help_morning"
+   }
+  ]
+ },
+ "voice.help_weather_clear": {
+  "sounds": [
+   {
+    "name": "verity:voice/help_weather_clear"
+   }
+  ]
+ },
+ "voice.help_weather_rain": {
+  "sounds": [
+   {
+    "name": "verity:voice/help_weather_rain"
+   }
+  ]
+ },
+ "voice.help_night": {
+  "sounds": [
+   {
+    "name": "verity:voice/help_night"
+   }
+  ]
+ },
+ "voice.help_low_health": {
+  "sounds": [
+   {
+    "name": "verity:voice/help_low_health"
+   }
+  ]
+ },
+ "voice.know_pizza": {
+  "sounds": [
+   {
+    "name": "verity:voice/know_pizza"
+   }
+  ]
+ },
+ "voice.know_everything": {
+  "sounds": [
+   {
+    "name": "verity:voice/know_everything"
+   }
+  ]
+ },
+ "voice.help_joke": {
+  "sounds": [
+   {
+    "name": "verity:voice/help_joke"
+   }
+  ]
+ },
+ "voice.help_cave": {
+  "sounds": [
+   {
+    "name": "verity:voice/help_cave"
+   }
+  ]
+ },
+ "voice.q_ask": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_ask"
+   }
+  ]
+ },
+ "voice.q_alone": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_alone"
+   }
+  ]
+ },
+ "voice.q_alone_follow": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_alone_follow"
+   }
+  ]
+ },
+ "voice.q_who_knows": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_who_knows"
+   }
+  ]
+ },
+ "voice.q_comeback": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_comeback"
+   }
+  ]
+ },
+ "voice.q_thanks": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_thanks"
+   }
+  ]
+ },
+ "voice.q_dark": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_dark"
+   }
+  ]
+ },
+ "voice.q_door": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_door"
+   }
+  ]
+ },
+ "voice.q_leave": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_leave"
+   }
+  ]
+ },
+ "voice.q_indoors": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_indoors"
+   }
+  ]
+ },
+ "voice.w_morning": {
+  "sounds": [
+   {
+    "name": "verity:voice/w_morning"
+   }
+  ]
+ },
+ "voice.w_seen_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/w_seen_1"
+   }
+  ]
+ },
+ "voice.w_seen_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/w_seen_2"
+   }
+  ]
+ },
+ "voice.w_who": {
+  "sounds": [
+   {
+    "name": "verity:voice/w_who"
+   }
+  ]
+ },
+ "voice.w_window": {
+  "sounds": [
+   {
+    "name": "verity:voice/w_window"
+   }
+  ]
+ },
+ "voice.w_visit": {
+  "sounds": [
+   {
+    "name": "verity:voice/w_visit"
+   }
+  ]
+ },
+ "voice.hw_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/hw_1"
+   }
+  ]
+ },
+ "voice.hw_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/hw_2"
+   }
+  ]
+ },
+ "voice.hw_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/hw_3"
+   }
+  ]
+ },
+ "voice.hw_4": {
+  "sounds": [
+   {
+    "name": "verity:voice/hw_4"
+   }
+  ]
+ },
+ "voice.hw_5": {
+  "sounds": [
+   {
+    "name": "verity:voice/hw_5"
+   }
+  ]
+ },
+ "voice.hw_6": {
+  "sounds": [
+   {
+    "name": "verity:voice/hw_6"
+   }
+  ]
+ },
+ "voice.h_door": {
+  "sounds": [
+   {
+    "name": "verity:voice/h_door"
+   }
+  ]
+ },
+ "voice.h_door_open": {
+  "sounds": [
+   {
+    "name": "verity:voice/h_door_open"
+   }
+  ]
+ },
+ "voice.h_animals": {
+  "sounds": [
+   {
+    "name": "verity:voice/h_animals"
+   }
+  ]
+ },
+ "voice.h_turned": {
+  "sounds": [
+   {
+    "name": "verity:voice/h_turned"
+   }
+  ]
+ },
+ "voice.h_dark": {
+  "sounds": [
+   {
+    "name": "verity:voice/h_dark"
+   }
+  ]
+ },
+ "voice.h_steps": {
+  "sounds": [
+   {
+    "name": "verity:voice/h_steps"
+   }
+  ]
+ },
+ "voice.nm_wake": {
+  "sounds": [
+   {
+    "name": "verity:voice/nm_wake"
+   }
+  ]
+ },
+ "voice.nm_wake_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/nm_wake_2"
+   }
+  ]
+ },
+ "voice.cd_three": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_three"
+   }
+  ]
+ },
+ "voice.cd_what": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_what"
+   }
+  ]
+ },
+ "voice.cd_danger": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_danger"
+   }
+  ]
+ },
+ "voice.cd_stop": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_stop"
+   }
+  ]
+ },
+ "voice.cd_two": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_two"
+   }
+  ]
+ },
+ "voice.cd_door": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_door"
+   }
+  ]
+ },
+ "voice.cd_ok": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_ok"
+   }
+  ]
+ },
+ "voice.cd_one": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_one"
+   }
+  ]
+ },
+ "voice.cd_wall": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_wall"
+   }
+  ]
+ },
+ "voice.cd_mine": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_mine"
+   }
+  ]
+ },
+ "voice.cd_lock": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_lock"
+   }
+  ]
+ },
+ "voice.cd_tonight": {
+  "sounds": [
+   {
+    "name": "verity:voice/cd_tonight"
+   }
+  ]
+ },
+ "voice.hunt_call_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/hunt_call_1"
+   }
+  ]
+ },
+ "voice.hunt_call_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/hunt_call_2"
+   }
+  ]
+ },
+ "voice.hunt_call_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/hunt_call_3"
+   }
+  ]
+ },
+ "voice.hunt_call_4": {
+  "sounds": [
+   {
+    "name": "verity:voice/hunt_call_4"
+   }
+  ]
+ },
+ "voice.hunt_caught": {
+  "sounds": [
+   {
+    "name": "verity:voice/hunt_caught"
+   }
+  ]
+ },
+ "voice.forgive_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/forgive_1"
+   }
+  ]
+ },
+ "voice.forgive_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/forgive_2"
+   }
+  ]
+ },
+ "voice.forgive_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/forgive_3"
+   }
+  ]
+ },
+ "voice.after_escape": {
+  "sounds": [
+   {
+    "name": "verity:voice/after_escape"
+   }
+  ]
+ },
+ "voice.after_caught": {
+  "sounds": [
+   {
+    "name": "verity:voice/after_caught"
+   }
+  ]
+ },
+ "voice.rules_intro": {
+  "sounds": [
+   {
+    "name": "verity:voice/rules_intro"
+   }
+  ]
+ },
+ "voice.rule_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/rule_1"
+   }
+  ]
+ },
+ "voice.rule_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/rule_2"
+   }
+  ]
+ },
+ "voice.rule_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/rule_3"
+   }
+  ]
+ },
+ "voice.far_warn_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/far_warn_1"
+   }
+  ]
+ },
+ "voice.far_warn_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/far_warn_2"
+   }
+  ]
+ },
+ "voice.far_warn_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/far_warn_3"
+   }
+  ]
+ },
+ "voice.far_snap": {
+  "sounds": [
+   {
+    "name": "verity:voice/far_snap"
+   }
+  ]
+ },
+ "voice.home_again": {
+  "sounds": [
+   {
+    "name": "verity:voice/home_again"
+   }
+  ]
+ },
+ "voice.villager_why": {
+  "sounds": [
+   {
+    "name": "verity:voice/villager_why"
+   }
+  ]
+ },
+ "voice.villager_have_me": {
+  "sounds": [
+   {
+    "name": "verity:voice/villager_have_me"
+   }
+  ]
+ },
+ "voice.villager_gone": {
+  "sounds": [
+   {
+    "name": "verity:voice/villager_gone"
+   }
+  ]
+ },
+ "voice.pet_jealous": {
+  "sounds": [
+   {
+    "name": "verity:voice/pet_jealous"
+   }
+  ]
+ },
+ "voice.think_ask": {
+  "sounds": [
+   {
+    "name": "verity:voice/think_ask"
+   }
+  ]
+ },
+ "voice.think_lonely": {
+  "sounds": [
+   {
+    "name": "verity:voice/think_lonely"
+   }
+  ]
+ },
+ "voice.strike_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/strike_1"
+   }
+  ]
+ },
+ "voice.strike_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/strike_2"
+   }
+  ]
+ },
+ "voice.strike_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/strike_3"
+   }
+  ]
+ },
+ "voice.punish_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/punish_1"
+   }
+  ]
+ },
+ "voice.punish_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/punish_2"
+   }
+  ]
+ },
+ "voice.p_after_escape": {
+  "sounds": [
+   {
+    "name": "verity:voice/p_after_escape"
+   }
+  ]
+ },
+ "voice.p_after_caught": {
+  "sounds": [
+   {
+    "name": "verity:voice/p_after_caught"
+   }
+  ]
+ },
+ "voice.p_forgive": {
+  "sounds": [
+   {
+    "name": "verity:voice/p_forgive"
+   }
+  ]
+ },
+ "voice.diary_who": {
+  "sounds": [
+   {
+    "name": "verity:voice/diary_who"
+   }
+  ]
+ },
+ "voice.diary_dont": {
+  "sounds": [
+   {
+    "name": "verity:voice/diary_dont"
+   }
+  ]
+ },
+ "voice.diary_found": {
+  "sounds": [
+   {
+    "name": "verity:voice/diary_found"
+   }
+  ]
+ },
+ "voice.diary_take": {
+  "sounds": [
+   {
+    "name": "verity:voice/diary_take"
+   }
+  ]
+ },
+ "voice.diary_gone": {
+  "sounds": [
+   {
+    "name": "verity:voice/diary_gone"
+   }
+  ]
+ },
+ "voice.diary_hidden": {
+  "sounds": [
+   {
+    "name": "verity:voice/diary_hidden"
+   }
+  ]
+ },
+ "voice.lava_rage": {
+  "sounds": [
+   {
+    "name": "verity:voice/lava_rage"
+   }
+  ]
+ },
+ "voice.lava_calm": {
+  "sounds": [
+   {
+    "name": "verity:voice/lava_calm"
+   }
+  ]
+ },
+ "voice.hurt_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/hurt_1"
+   }
+  ]
+ },
+ "voice.hurt_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/hurt_2"
+   }
+  ]
+ },
+ "voice.poke_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/poke_1"
+   }
+  ]
+ },
+ "voice.poke_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/poke_2"
+   }
+  ]
+ },
+ "voice.poke_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/poke_3"
+   }
+  ]
+ },
+ "voice.back_short": {
+  "sounds": [
+   {
+    "name": "verity:voice/back_short"
+   }
+  ]
+ },
+ "voice.back_long": {
+  "sounds": [
+   {
+    "name": "verity:voice/back_long"
+   }
+  ]
+ },
+ "voice.sleep_watch": {
+  "sounds": [
+   {
+    "name": "verity:voice/sleep_watch"
+   }
+  ]
+ },
+ "voice.leave_dim": {
+  "sounds": [
+   {
+    "name": "verity:voice/leave_dim"
+   }
+  ]
+ },
+ "voice.lab_offer": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_offer"
+   }
+  ]
+ },
+ "voice.lab_coords": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_coords"
+   }
+  ]
+ },
+ "voice.lab_home": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_home"
+   }
+  ]
+ },
+ "voice.lab_victims": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_victims"
+   }
+  ]
+ },
+ "voice.lab_victims_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_victims_2"
+   }
+  ]
+ },
+ "voice.lab_machine": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_machine"
+   }
+  ]
+ },
+ "voice.lab_boxes": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_boxes"
+   }
+  ]
+ },
+ "voice.lab_boxes_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_boxes_2"
+   }
+  ]
+ },
+ "voice.lab_mono_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_mono_1"
+   }
+  ]
+ },
+ "voice.lab_mono_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_mono_2"
+   }
+  ]
+ },
+ "voice.lab_mono_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_mono_3"
+   }
+  ]
+ },
+ "voice.lab_mono_4": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_mono_4"
+   }
+  ]
+ },
+ "voice.lab_mono_5": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_mono_5"
+   }
+  ]
+ },
+ "voice.lab_mono_6": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_mono_6"
+   }
+  ]
+ },
+ "voice.lab_choice": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_choice"
+   }
+  ]
+ },
+ "voice.end_stay_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/end_stay_1"
+   }
+  ]
+ },
+ "voice.end_stay_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/end_stay_2"
+   }
+  ]
+ },
+ "voice.epi_stay_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/epi_stay_1"
+   }
+  ]
+ },
+ "voice.epi_stay_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/epi_stay_2"
+   }
+  ]
+ },
+ "voice.epi_stay_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/epi_stay_3"
+   }
+  ]
+ },
+ "voice.end_seal_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/end_seal_1"
+   }
+  ]
+ },
+ "voice.end_seal_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/end_seal_2"
+   }
+  ]
+ },
+ "voice.san_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/san_2"
+   }
+  ]
+ },
+ "voice.san_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/san_3"
+   }
+  ]
+ },
+ "voice.san_4": {
+  "sounds": [
+   {
+    "name": "verity:voice/san_4"
+   }
+  ]
+ },
+ "voice.san_5": {
+  "sounds": [
+   {
+    "name": "verity:voice/san_5"
+   }
+  ]
+ },
+ "voice.san_6": {
+  "sounds": [
+   {
+    "name": "verity:voice/san_6"
+   }
+  ]
+ },
+ "voice.san_better": {
+  "sounds": [
+   {
+    "name": "verity:voice/san_better"
+   }
+  ]
+ },
+ "voice.san_faint": {
+  "sounds": [
+   {
+    "name": "verity:voice/san_faint"
+   }
+  ]
+ },
+ "voice.handoff_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/handoff_1"
+   }
+  ]
+ },
+ "voice.handoff_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/handoff_2"
+   }
+  ]
+ },
+ "voice.old_owner": {
+  "sounds": [
+   {
+    "name": "verity:voice/old_owner"
+   }
+  ]
+ },
+ "voice.friend_v2": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_v2"
+   }
+  ]
+ },
+ "voice.friend_gone_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_gone_1"
+   }
+  ]
+ },
+ "voice.friend_gone_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_gone_2"
+   }
+  ]
+ },
+ "voice.far_warn_4": {
+  "sounds": [
+   {
+    "name": "verity:voice/far_warn_4"
+   }
+  ]
+ },
+ "voice.pick_me": {
+  "sounds": [
+   {
+    "name": "verity:voice/pick_me"
+   }
+  ]
+ },
+ "voice.back_pocket": {
+  "sounds": [
+   {
+    "name": "verity:voice/back_pocket"
+   }
+  ]
+ },
+ "voice.drop_far": {
+  "sounds": [
+   {
+    "name": "verity:voice/drop_far"
+   }
+  ]
+ },
+ "voice.stash_complain": {
+  "sounds": [
+   {
+    "name": "verity:voice/stash_complain"
+   }
+  ]
+ },
+ "voice.not_yours": {
+  "sounds": [
+   {
+    "name": "verity:voice/not_yours"
+   }
+  ]
+ },
+ "voice.mp_who": {
+  "sounds": [
+   {
+    "name": "verity:voice/mp_who"
+   }
+  ]
+ },
+ "voice.mp_leave": {
+  "sounds": [
+   {
+    "name": "verity:voice/mp_leave"
+   }
+  ]
+ },
+ "voice.mp_hello": {
+  "sounds": [
+   {
+    "name": "verity:voice/mp_hello"
+   }
+  ]
+ },
+ "voice.mp_swat": {
+  "sounds": [
+   {
+    "name": "verity:voice/mp_swat"
+   }
+  ]
+ },
+ "voice.fb_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/fb_1"
+   }
+  ]
+ },
+ "voice.fb_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/fb_2"
+   }
+  ]
+ },
+ "voice.fb_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/fb_3"
+   }
+  ]
+ },
+ "voice.fb_4": {
+  "sounds": [
+   {
+    "name": "verity:voice/fb_4"
+   }
+  ]
+ },
+ "voice.ai_error": {
+  "sounds": [
+   {
+    "name": "verity:voice/ai_error"
+   }
+  ]
+ },
+ "voice.q_favorite": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_favorite"
+   }
+  ]
+ },
+ "voice.face_no": {
+  "sounds": [
+   {
+    "name": "verity:voice/face_no"
+   }
+  ]
+ },
+ "voice.face_always": {
+  "sounds": [
+   {
+    "name": "verity:voice/face_always"
+   }
+  ]
+ },
+ "voice.song_like": {
+  "sounds": [
+   {
+    "name": "verity:voice/song_like"
+   }
+  ]
+ },
+ "voice.east_none": {
+  "sounds": [
+   {
+    "name": "verity:voice/east_none"
+   }
+  ]
+ },
+ "voice.east_hungry": {
+  "sounds": [
+   {
+    "name": "verity:voice/east_hungry"
+   }
+  ]
+ },
+ "voice.friend_where": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_where"
+   }
+  ]
+ },
+ "voice.friend_your": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_your"
+   }
+  ]
+ },
+ "voice.friend_hm": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_hm"
+   }
+  ]
+ },
+ "voice.friend_tell": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_tell"
+   }
+  ]
+ },
+ "voice.friend_glad": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_glad"
+   }
+  ]
+ },
+ "voice.friend_math": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_math"
+   }
+  ]
+ },
+ "voice.friend_series": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_series"
+   }
+  ]
+ },
+ "voice.friend_rest": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_rest"
+   }
+  ]
+ },
+ "voice.friend_left": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_left"
+   }
+  ]
+ },
+ "voice.friend_home": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_home"
+   }
+  ]
+ },
+ "voice.friend_hurry": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_hurry"
+   }
+  ]
+ },
+ "voice.friend_better": {
+  "sounds": [
+   {
+    "name": "verity:voice/friend_better"
+   }
+  ]
+ },
+ "voice.stash_out": {
+  "sounds": [
+   {
+    "name": "verity:voice/stash_out"
+   }
+  ]
+ },
+ "voice.home_jump": {
+  "sounds": [
+   {
+    "name": "verity:voice/home_jump"
+   }
+  ]
+ },
+ "voice.villages_none": {
+  "sounds": [
+   {
+    "name": "verity:voice/villages_none"
+   }
+  ]
+ },
+ "voice.mimic_after": {
+  "sounds": [
+   {
+    "name": "verity:voice/mimic_after"
+   }
+  ]
+ },
+ "voice.q_promise": {
+  "sounds": [
+   {
+    "name": "verity:voice/q_promise"
+   }
+  ]
+ },
+ "voice.promise_good": {
+  "sounds": [
+   {
+    "name": "verity:voice/promise_good"
+   }
+  ]
+ },
+ "voice.rec_intro": {
+  "sounds": [
+   {
+    "name": "verity:voice/rec_intro"
+   }
+  ]
+ },
+ "voice.rec_bugged": {
+  "sounds": [
+   {
+    "name": "verity:voice/rec_bugged"
+   }
+  ]
+ },
+ "voice.rec_left": {
+  "sounds": [
+   {
+    "name": "verity:voice/rec_left"
+   }
+  ]
+ },
+ "voice.lab_staff": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_staff"
+   }
+  ]
+ },
+ "voice.lab_note": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_note"
+   }
+  ]
+ },
+ "voice.lab_send": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_send"
+   }
+  ]
+ },
+ "voice.lab_not_send": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_not_send"
+   }
+  ]
+ },
+ "voice.lab_tried": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_tried"
+   }
+  ]
+ },
+ "voice.lab_cant": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_cant"
+   }
+  ]
+ },
+ "voice.lab_twix_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_twix_1"
+   }
+  ]
+ },
+ "voice.lab_twix_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_twix_2"
+   }
+  ]
+ },
+ "voice.lab_die": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_die"
+   }
+  ]
+ },
+ "voice.lab_worlds": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_worlds"
+   }
+  ]
+ },
+ "voice.lab_sorry": {
+  "sounds": [
+   {
+    "name": "verity:voice/lab_sorry"
+   }
+  ]
+ },
+ "voice.end_promise": {
+  "sounds": [
+   {
+    "name": "verity:voice/end_promise"
+   }
+  ]
+ },
+ "voice.sup_back": {
+  "sounds": [
+   {
+    "name": "verity:voice/sup_back"
+   }
+  ]
+ },
+ "voice.sup_hello": {
+  "sounds": [
+   {
+    "name": "verity:voice/sup_hello"
+   }
+  ]
+ },
+ "voice.sup_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/sup_1"
+   }
+  ]
+ },
+ "voice.sup_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/sup_2"
+   }
+  ]
+ },
+ "voice.sup_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/sup_3"
+   }
+  ]
+ },
+ "voice.sup_wait": {
+  "sounds": [
+   {
+    "name": "verity:voice/sup_wait"
+   }
+  ]
+ },
+ "voice.sup_again": {
+  "sounds": [
+   {
+    "name": "verity:voice/sup_again"
+   }
+  ]
+ },
+ "voice.op_1": {
+  "sounds": [
+   {
+    "name": "verity:voice/op_1"
+   }
+  ]
+ },
+ "voice.op_2": {
+  "sounds": [
+   {
+    "name": "verity:voice/op_2"
+   }
+  ]
+ },
+ "voice.op_3": {
+  "sounds": [
+   {
+    "name": "verity:voice/op_3"
+   }
+  ]
+ },
+ "voice.op_4": {
+  "sounds": [
+   {
+    "name": "verity:voice/op_4"
+   }
+  ]
+ },
+ "voice.dynamic": {
+  "sounds": [
+   {
+    "name": "verity:voice/silence",
+    "stream": true
+   }
+  ]
+ },
+ "sfx.bounce": {
+  "sounds": [
+   {
+    "name": "verity:sfx/bounce"
+   }
+  ]
+ },
+ "sfx.box_open": {
+  "sounds": [
+   {
+    "name": "verity:sfx/box_open"
+   }
+  ]
+ },
+ "sfx.drone": {
+  "sounds": [
+   {
+    "name": "verity:sfx/drone"
+   }
+  ]
+ },
+ "sfx.glitch": {
+  "sounds": [
+   {
+    "name": "verity:sfx/glitch"
+   }
+  ]
+ },
+ "sfx.growl": {
+  "sounds": [
+   {
+    "name": "verity:sfx/growl"
+   }
+  ]
+ },
+ "sfx.heartbeat": {
+  "sounds": [
+   {
+    "name": "verity:sfx/heartbeat"
+   }
+  ]
+ },
+ "sfx.jumpscare": {
+  "sounds": [
+   {
+    "name": "verity:sfx/jumpscare"
+   }
+  ]
+ },
+ "sfx.knock": {
+  "sounds": [
+   {
+    "name": "verity:sfx/knock"
+   }
+  ]
+ },
+ "sfx.machine": {
+  "sounds": [
+   {
+    "name": "verity:sfx/machine"
+   }
+  ]
+ },
+ "sfx.scream": {
+  "sounds": [
+   {
+    "name": "verity:sfx/scream"
+   }
+  ]
+ },
+ "sfx.siren": {
+  "sounds": [
+   {
+    "name": "verity:sfx/siren"
+   }
+  ]
+ },
+ "sfx.step": {
+  "sounds": [
+   {
+    "name": "verity:sfx/step"
+   }
+  ]
+ },
+ "sfx.transform": {
+  "sounds": [
+   {
+    "name": "verity:sfx/transform"
+   }
+  ]
+ },
+ "music.decay_a": {
+  "sounds": [
+   {
+    "name": "verity:music/decay_a",
+    "stream": true
+   }
+  ]
+ },
+ "music.decay_b": {
+  "sounds": [
+   {
+    "name": "verity:music/decay_b",
+    "stream": true
+   }
+  ]
+ },
+ "music.decay_c": {
+  "sounds": [
+   {
+    "name": "verity:music/decay_c",
+    "stream": true
+   }
+  ]
+ },
+ "music.decay_d": {
+  "sounds": [
+   {
+    "name": "verity:music/decay_d",
+    "stream": true
+   }
+  ]
+ },
+ "music.decay_e": {
+  "sounds": [
+   {
+    "name": "verity:music/decay_e",
+    "stream": true
+   }
+  ]
+ },
+ "music.decay_f": {
+  "sounds": [
+   {
+    "name": "verity:music/decay_f",
+    "stream": true
+   }
+  ]
+ },
+ "music.old_tune": {
+  "sounds": [
+   {
+    "name": "verity:music/old_tune",
+    "stream": true
+   }
+  ]
+ }
+}

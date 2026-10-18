@@ -1,0 +1,45 @@
+# Verity as an item: box -> ball on the ground -> picked up -> in the hand, in the inventory, thrown, seen from outside
+wait 80
+cmd time set 1000
+cmd tp @s 0.5 -60 0.5 0 12
+wait 10
+cmd verity start
+wait 70
+cmd verity open
+wait 120
+shot i1_ball_on_ground
+wait 160
+shot i2_ground_talk
+cmd verity give
+wait 30
+hold
+wait 15
+shot i3_in_hand
+chat Привет! Кто ты?
+wait 110
+shot i4_hand_talking
+wait 6
+shot i4b_hand_talking
+inv
+wait 15
+shot i5_inventory
+close
+camera front
+wait 15
+shot i6_third_person_front
+camera back
+wait 10
+shot i7_third_person_back
+camera first
+cmd verity emotion teeth
+wait 12
+shot i8_hand_teeth
+cmd verity emotion happy
+throw
+wait 30
+shot i9_thrown
+wait 40
+cmd tp @s 0.5 -60 20.5 0 12
+wait 60
+shot i10_came_back
+quit

@@ -1,0 +1,26 @@
+# long-term memory: enough talk to fold the oldest turns into a summary, then ask about them
+wait 100
+cmd time set 6000
+cmd verity stage helper
+wait 20
+chat Меня зовут Миша, мне нравится строить из берёзы.
+wait 140
+chat Мой любимый моб - лиса, а криперов я боюсь.
+wait 140
+chat Я хочу найти деревню и поселиться рядом с ней.
+wait 140
+chat Обещай, что не будешь пугать меня по ночам.
+wait 140
+chat Сегодня я собираюсь копать шахту до самого бедрока.
+wait 140
+chat А ещё у меня есть кот по имени Пиксель.
+wait 140
+chat Как думаешь, мне хватит одного стака факелов?
+wait 140
+cmd verity summarize
+wait 300
+cmd verity context
+wait 20
+chat Какой у меня любимый моб и как зовут моего кота?
+wait 170
+quit

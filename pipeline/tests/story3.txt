@@ -1,0 +1,73 @@
+# caught by the monster (jumpscare), then the lab and the "stay" ending. Needs a normal world.
+wait 120
+cmd tp @s 8.5 140 8.5 0 0
+wait 110
+cmd time set 18000
+cmd gamemode survival
+cmd verity stage hunt
+wait 215
+shot j00
+wait 14
+shot j01
+wait 14
+shot j02
+wait 14
+shot j03
+wait 14
+shot j04
+wait 10
+shot j05
+wait 8
+shot j06
+wait 8
+shot j07
+wait 8
+shot j08
+wait 8
+shot j09
+wait 8
+shot j10
+wait 8
+shot j11
+wait 8
+shot j12
+wait 8
+shot j13
+wait 8
+shot j14
+wait 8
+shot j15
+wait 60
+shot j16_after
+wait 200
+shot j17_morning
+cmd gamemode creative
+cmd verity stage lab
+wait 170
+cmd verity labtp corridor
+wait 70
+shot L1_corridor
+cmd verity labtp end
+wait 20
+shot L1b_corridor_back
+cmd verity labtp names
+wait 40
+shot L2_names
+wait 150
+shot L2b_names
+cmd verity labtp machine
+wait 80
+shot L3_machine
+cmd verity use lever
+wait 70
+shot L4_machine_on
+wait 300
+shot L5_mono
+wait 560
+shot L6_choice
+cmd verity use stay
+wait 60
+shot L7_stay
+wait 170
+shot L8_title
+quit

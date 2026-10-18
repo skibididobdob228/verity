@@ -1,0 +1,28 @@
+# ending "sealed": needs a normal world
+wait 140
+cmd time set 3000
+cmd verity stage lab
+wait 170
+cmd verity labtp machine
+wait 60
+cmd verity use choice
+wait 90
+shot e1_choice
+cmd verity use seal
+wait 60
+shot e2_seal_transform
+wait 60
+shot e3_seal_monster
+wait 50
+shot e4_seal_hunt
+cmd verity labtp end
+wait 30
+shot e5_corridor_chase
+wait 30
+shot e5b_corridor_chase
+cmd verity labtp top
+wait 20
+shot e6_sealed
+wait 110
+shot e7_title
+quit

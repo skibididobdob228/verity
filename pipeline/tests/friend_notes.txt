@@ -1,0 +1,16 @@
+# Twixxel's night: the lectern with his notes and the red on the ground
+wait 110
+cmd time set 3000
+cmd verity stage possessive
+wait 40
+cmd verity friend
+wait 100
+cmd verity friend
+wait 200
+cmd verity find где кафедра с записями друга?
+wait 30
+shot n1_find
+cmd effect give @s minecraft:night_vision 999 0 true
+cmd tp @s ~ ~ ~ 0 40
+wait 10
+quit

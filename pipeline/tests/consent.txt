@@ -1,0 +1,16 @@
+# the consent screen itself: type a name, press yes; the next time the box remembers it; then clear it again
+wait 80
+cmd verity stage helper
+wait 20
+consent show
+wait 10
+consent submit  артём-2  
+wait 30
+consent show
+wait 15
+shot k1_prefilled
+consent submit
+wait 20
+cmd verity name
+wait 20
+quit

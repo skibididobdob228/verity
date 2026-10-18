@@ -1,0 +1,48 @@
+# the friend from the series, the double, the monster through a stone wall, no lights in his eyes
+wait 80
+cmd time set 4000
+cmd tp @s 0.5 -60 0.5 0 0
+cmd verity stage possessive
+wait 400
+cmd verity friend
+wait 120
+cmd tp @s 4.5 -60 2.5 0 0
+wait 20
+cmd execute at @s run tp @s ~ ~ ~ facing entity @e[type=verity:friend,limit=1] eyes
+wait 10
+shot t1_twixxel
+chat кто ты?
+wait 400
+shot t2_talking
+cmd time set 15000
+cmd verity friend
+wait 70
+cmd execute at @s run tp @s ~ ~ ~ facing entity @e[type=verity:monster,limit=1] eyes
+wait 5
+shot t3_it_came
+wait 60
+shot t4
+wait 100
+shot t5_gone
+cmd time add 13000
+wait 200
+shot t6_morning
+cmd verity sanity 4
+wait 60
+cmd verity sanity see double
+wait 20
+face player
+wait 3
+shot t7_double
+cmd time set 18000
+cmd verity sanity 0
+cmd fill -4 -60 -4 4 -56 4 minecraft:stone_bricks hollow
+cmd setblock 0 -57 0 minecraft:torch
+cmd tp @s 0.5 -59 0.5 0 0
+cmd gamemode survival
+cmd verity stage hunt
+wait 500
+shot t8_wall
+wait 100
+shot t9_inside
+quit

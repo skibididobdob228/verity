@@ -1,0 +1,27 @@
+# how dark the night is (normal world, seed 7): dusk, midnight, torch in hand, a lit spot, day for comparison
+wait 110
+cmd time set 6000
+cmd weather clear
+cmd tp @s ~ ~ ~ 90 4
+wait 40
+shot n0_day
+cmd time set 12900
+wait 140
+shot n1_dusk
+cmd time set 18000
+wait 200
+shot n2_midnight
+cmd give @s minecraft:torch 16
+wait 10
+slot 0
+wait 80
+shot n3_midnight_torch_in_hand
+cmd setblock ~-3 ~ ~ minecraft:torch
+cmd setblock ~-5 ~ ~2 minecraft:torch
+wait 80
+shot n4_midnight_torches_placed
+slot 4
+cmd summon verity:monster ~-9 ~ ~
+wait 80
+shot n5_monster_9_blocks
+quit

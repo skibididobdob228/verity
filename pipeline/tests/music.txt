@@ -1,0 +1,13 @@
+# the soundtrack: the built-in first stage, then the player's own file for stage 3, then the last stage
+wait 100
+cmd time set 6000
+cmd tp @s 0.5 -60 0.5 0 5
+cmd verity stage watched
+musicvol 1
+volume 1
+wait 400
+cmd verity sanity 3
+wait 400
+cmd verity sanity 6
+wait 420
+quit

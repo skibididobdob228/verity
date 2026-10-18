@@ -1,0 +1,19 @@
+wait 80
+cmd time set 6000
+cmd tp @s 0.5 -60 0.5 0 5
+lan 25599
+cmd verity stage countdown
+wait 20
+consent yes
+waitplayers 2
+wait 60
+cmd tp Guest 2.5 -60 3.5 180 0
+cmd verity drop
+wait 160
+cmd verity scare
+wait 200
+cmd verity scare
+wait 200
+cmd verity scare
+wait 300
+quit

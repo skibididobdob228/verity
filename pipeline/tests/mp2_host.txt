@@ -1,0 +1,30 @@
+# multiplayer 2, the host: everyone's own sanity, the knock heard by both, two people asking at once, giving Verity to the guest
+wait 80
+cmd time set 6000
+cmd tp @s 0.5 -60 0.5 0 5
+lan 25599
+cmd verity stage watched
+wait 20
+hold
+waitplayers 2
+wait 60
+cmd tp Guest 2.5 -60 3.5 180 0
+cmd verity sanity 2
+cmd verity sanity 5 Guest
+wait 40
+cmd verity sanity
+wait 100
+chat Верити, который час?
+wait 300
+cmd verity haunt knock
+wait 200
+shot m2h_1
+cmd verity owner Guest
+wait 120
+shot m2h_2_given_away
+cmd verity sanity
+chat А теперь ты чей?
+wait 300
+shot m2h_3
+wait 200
+quit

@@ -1,0 +1,59 @@
+# every face, close up
+wait 80
+cmd time set 6000
+cmd tp @s 0.5 -60 0.5 0 20
+cmd verity stage helper
+cmd verity drop
+wait 40
+cmd verity anchor 0.5 -58.6 2.0
+wait 40
+gui off
+cmd verity emotion happy
+wait 25
+shot f01_happy
+cmd verity emotion grin
+wait 25
+shot f02_grin
+cmd verity emotion wink
+wait 25
+shot f03_wink
+cmd verity emotion laugh
+wait 25
+shot f04_laugh
+cmd verity emotion smug
+wait 25
+shot f05_smug
+cmd verity emotion love
+wait 25
+shot f06_love
+cmd verity emotion sleepy
+wait 25
+shot f07_sleepy
+cmd verity emotion neutral
+wait 25
+shot f08_neutral
+cmd verity emotion sad
+wait 25
+shot f09_sad
+cmd verity emotion crying
+wait 25
+shot f10_crying
+cmd verity emotion scared
+wait 25
+shot f11_scared
+cmd verity emotion surprised
+wait 25
+shot f12_surprised
+cmd verity emotion angry
+wait 25
+shot f13_angry
+cmd verity emotion blank
+wait 25
+shot f14_blank
+cmd verity emotion creepy
+wait 25
+shot f15_creepy
+cmd verity emotion teeth
+wait 25
+shot f16_teeth
+quit

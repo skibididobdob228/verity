@@ -1,0 +1,15 @@
+wait 120
+cmd time set 6000
+gui off
+wait 20
+shot look_a
+cmd tp @s ~ ~ ~ 90 0
+wait 20
+shot look_b
+cmd tp @s ~ ~ ~ 180 0
+wait 20
+shot look_c
+cmd tp @s ~ ~ ~ 270 0
+wait 20
+shot look_d
+quit

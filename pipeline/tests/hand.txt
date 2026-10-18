@@ -1,0 +1,24 @@
+# Verity in the hand (first person), talking, teeth; left hand too
+wait 80
+cmd time set 6000
+cmd tp @s 0.5 -60 0.5 0 0
+cmd verity stage helper
+wait 30
+hold
+wait 20
+shot m5_hand
+talk on
+wait 13
+shot m6_hand_talk
+talk off
+cmd verity emotion teeth
+wait 15
+shot m7_hand_teeth
+cmd verity emotion angry
+wait 15
+shot m8_hand_angry
+cmd verity emotion happy
+cmd verity corruption 0.9
+wait 40
+shot m9_hand_corrupt
+quit

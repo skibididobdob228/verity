@@ -1,0 +1,36 @@
+# joins a dedicated server (pipeline/lab.sh pipeline/tests/dedicated.txt join:25565): parcel, pickup, chat, hand, hunt start
+wait 100
+cmd time set 1000
+cmd tp @s 0.5 -60 0.5 0 8
+wait 10
+cmd verity start
+wait 70
+cmd verity open
+wait 300
+shot d1_ball_ground
+cmd verity give
+wait 20
+hold
+wait 20
+shot d2_in_hand
+chat Привет! Какая сейчас погода?
+wait 130
+shot d3_ai_answer
+camera front
+wait 15
+shot d4_third_person
+camera first
+cmd verity stage countdown
+wait 150
+shot d5_countdown
+cmd time set 15000
+cmd verity stage hunt
+wait 80
+cmd tp @s ~ ~ ~ 180 -10
+wait 130
+shot d6_monster
+wait 30
+shot d7_monster
+cmd verity reset
+wait 20
+quit

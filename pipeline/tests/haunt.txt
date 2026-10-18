@@ -1,0 +1,95 @@
+# the haunt: the figure at the edge of the dark, behind you, knocking, animals, lights, the visit, the nightmare
+wait 80
+cmd tp @s 0.5 -60 0.5 0 0
+cmd time set 18000
+cmd verity stage watched
+wait 330
+cmd verity haunt watcher
+wait 14
+shot w1_watcher
+cmd execute at @s run tp @s ~ ~ ~ facing entity @e[type=verity:monster,limit=1,sort=nearest] feet
+wait 14
+shot w2_facing
+wait 50
+shot w3_gone
+wait 60
+cmd tp @s 0.5 -60 -10.5 0 0
+cmd verity haunt behind
+camera front
+wait 20
+shot b1_behind
+camera first
+cmd tp @s ~ ~ ~ 180 -20
+wait 4
+shot b2_turned
+wait 30
+shot b3_gone
+wait 60
+cmd fill -3 -60 5 3 -57 5 minecraft:oak_planks
+cmd setblock 0 -60 5 minecraft:oak_door[half=lower,facing=north]
+cmd setblock 0 -59 5 minecraft:oak_door[half=upper,facing=north]
+cmd setblock 2 -60 3 minecraft:torch
+cmd tp @s 0.5 -60 0.5 0 0
+cmd verity haunt knock
+wait 160
+shot k1_door_open
+wait 40
+cmd summon minecraft:cow 4 -60 3
+cmd summon minecraft:cow -4 -60 2
+cmd summon minecraft:sheep 3 -60 -2
+cmd summon minecraft:pig -3 -60 3
+wait 60
+cmd tp @s 0.5 -60 -2.5 0 10
+cmd verity haunt stare
+wait 70
+shot s1_stare
+wait 90
+cmd verity haunt dark
+wait 50
+shot d1_lights_die
+wait 90
+cmd verity haunt join
+chat Привет, ты тут?
+wait 60
+cmd verity haunt echo
+wait 60
+cmd verity haunt steps
+wait 80
+cmd verity haunt flash
+wait 1
+shot f1_flash
+wait 30
+cmd setblock 0 -60 5 minecraft:oak_door[half=lower,facing=north]
+cmd setblock 0 -59 5 minecraft:oak_door[half=upper,facing=north]
+cmd tp @s 0.5 -60 2.5 0 0
+cmd verity haunt visit
+wait 150
+shot v1_door
+wait 40
+shot v2_figure
+wait 50
+shot v3_gone
+wait 90
+cmd tp @s 0.5 -60 -6.5 0 0
+cmd verity haunt nightmare
+wait 42
+shot n1_wake
+wait 8
+shot n2_wake
+wait 4
+shot n3_t54
+wait 3
+shot n4_t57
+wait 2
+shot n5_t59
+wait 2
+shot n6_t61
+wait 2
+shot n7_t63
+wait 2
+shot n8_t65
+wait 3
+shot n9_t68
+wait 90
+shot n10_after
+quit

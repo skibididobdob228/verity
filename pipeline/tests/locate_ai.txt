@@ -1,0 +1,18 @@
+# the model's side: exact numbers, slogan only now and then (normal world, seed 7)
+wait 110
+cmd time set 6000
+cmd verity stage helper
+wait 20
+hold
+chat Верити, где ближайшая деревня?
+wait 200
+chat Верити, где найти алмазы?
+wait 200
+chat Верити, как скрафтить печь?
+wait 200
+chat Верити, где ближайший аванпост разбойников?
+wait 200
+chat Верити, где ближайшая пустыня?
+wait 200
+shot la_pointer
+quit

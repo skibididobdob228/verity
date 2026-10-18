@@ -1,0 +1,61 @@
+# the longer plot: the acts follow one another by the day; three strikes; the diary; the store-room of parcels
+wait 80
+cmd tp @s 0.5 -60 0.5 0 0
+cmd time set 2000
+cmd verity stage helper
+wait 60
+cmd time add 48000
+wait 60
+cmd verity stage
+wait 440
+cmd time add 24000
+wait 170
+shot q1_dark_question
+chat Нет, не боюсь
+wait 120
+cmd time add 24000
+wait 60
+cmd verity stage
+wait 300
+shot a1_watched
+chat Кто там стоит?
+wait 80
+cmd time add 48000
+wait 60
+cmd verity stage
+wait 160
+shot a2_countdown
+cmd verity stage possessive
+wait 420
+cmd verity strike
+wait 190
+cmd verity strike
+wait 190
+cmd verity strike
+wait 190
+cmd verity stage
+cmd verity diary
+wait 200
+shot d1_barrel_message
+cmd item replace entity @s hotbar.5 from block -11 -60 -5 container.13
+wait 120
+shot d2_found
+cmd time add 12000
+wait 330
+shot p1_punish_hunt
+cmd verity stage
+cmd verity calm
+wait 260
+shot p2_forgiven
+cmd verity stage
+cmd time add 13000
+wait 1300
+shot d3_taken
+cmd verity stage lab
+wait 170
+cmd verity labtp boxes
+wait 120
+shot L7_boxes
+wait 160
+shot L8_boxes
+quit

@@ -1,0 +1,15 @@
+# sound check: box, greeting (baked voice), one AI answer (Piper), a glitch
+wait 100
+volume 1
+cmd time set 1000
+cmd tp @s 0.5 -60 0.5 0 5
+wait 10
+cmd verity start
+wait 70
+cmd verity open
+wait 330
+chat Привет! Расскажи, что ты умеешь?
+wait 260
+cmd verity fx 5
+wait 40
+quit

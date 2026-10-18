@@ -1,0 +1,21 @@
+# smoke test of the packaged jar: parcel, hello, pick up, hold, chat, throw
+wait 80
+cmd time set 1000
+cmd tp @s 0.5 -60 0.5 0 8
+cmd verity start
+wait 60
+cmd verity open
+wait 230
+cmd verity give
+wait 20
+hold
+wait 20
+shot jar_hand
+chat Сколько сейчас времени?
+wait 120
+shot jar_ai
+throw
+wait 40
+shot jar_thrown
+wait 20
+quit

@@ -1,0 +1,10 @@
+{
+  "_comment": "Sounds generated with fal.ai (endpoint fal-ai/elevenlabs/sound-effects/v2, $0.002 per second) on 2026-10-12. Total: 54 s, about $0.11.",
+  "scream":    {"seconds": 4,  "prompt": "Inhuman monster scream: a tall gaunt creature shrieking with rage and grief, layered distorted voice, echoing, horror", "url": "https://v3b.fal.media/files/b/0aae1a34/8TcJKmhlC05N42aik-KNj_sound_effect.mp3"},
+  "growl":     {"seconds": 4,  "prompt": "Low guttural creature growl with wet raspy breathing, very close, menacing, horror", "url": "https://v3b.fal.media/files/b/0aae1a35/bf3cZCPn1fTk0nJ4duI3p_sound_effect.mp3"},
+  "transform": {"seconds": 5,  "prompt": "Bones cracking and stretching, wet flesh tearing, a body rapidly transforming and growing, horror", "url": "https://v3b.fal.media/files/b/0aae1a36/6XuWfpA7xImewISXtvW2Q_sound_effect.mp3"},
+  "jumpscare": {"seconds": 3,  "prompt": "Sudden loud horror jumpscare stinger: screeching dissonant violin hit with a distorted shriek", "url": "https://v3b.fal.media/files/b/0aae1a36/--I-svpQu4F-thLYcJgMP_sound_effect.mp3"},
+  "machine":   {"seconds": 6,  "prompt": "Old electrical machine powering up in a laboratory: heavy hum rising, crackling sparks, then failing and winding down", "url": "https://v3b.fal.media/files/b/0aae1a37/sy0o9fO_2g3KLCn-IUcaZ_sound_effect.mp3"},
+  "drone":     {"seconds": 10, "loop": true, "prompt": "Dark ominous low drone ambience, sub bass rumble with faint distant whispers, horror atmosphere", "url": "https://v3b.fal.media/files/b/0aae1a38/pCJ6Fcq0ePr4-stls_2-0_sound_effect.mp3"},
+  "old_tune":  {"seconds": 22, "loop": true, "prompt": "A scratchy 1920s gramophone record playing a slow, slightly detuned music box waltz, eerie, lo-fi, vinyl crackle", "url": "https://v3b.fal.media/files/b/0aae1a39/J-0iu44vIFKKDPgi6th6V_sound_effect.mp3"}
+}

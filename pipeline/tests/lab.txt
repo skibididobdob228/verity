@@ -1,0 +1,36 @@
+# the lab and the "stay" ending. Needs a normal world (stays at the world spawn, in creative).
+wait 140
+cmd time set 3000
+cmd verity stage lab
+wait 170
+shot L0_surface
+cmd verity labtp top
+wait 30
+shot L0b_hatch
+cmd verity labtp corridor
+wait 70
+shot L1_corridor
+cmd verity labtp end
+wait 20
+shot L1b_corridor_back
+cmd verity labtp names
+wait 40
+shot L2_names
+wait 150
+shot L2b_names
+cmd verity labtp machine
+wait 80
+shot L3_machine
+cmd verity use lever
+wait 70
+shot L4_machine_on
+wait 300
+shot L5_mono
+wait 560
+shot L6_choice
+cmd verity use stay
+wait 60
+shot L7_stay
+wait 170
+shot L8_title
+quit

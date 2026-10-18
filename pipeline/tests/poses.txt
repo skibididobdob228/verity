@@ -1,0 +1,48 @@
+# low ceilings and the chase in survival (jumpscare)
+wait 80
+cmd time set 6000
+cmd fill -6 -55 20 6 -55 32 minecraft:stone
+cmd fill -6 -57 40 6 -57 52 minecraft:stone
+cmd fill -6 -58 60 6 -58 72 minecraft:stone
+cmd tp @s 4.5 -60 26 90 -5
+cmd summon verity:monster -3 -60 26
+wait 60
+shot z1_roof5
+cmd verity clear
+cmd tp @s 4.5 -60 46 90 0
+cmd summon verity:monster -3 -60 46
+wait 60
+shot z2_roof3
+cmd verity clear
+cmd tp @s 4.5 -60 66 90 0
+cmd summon verity:monster -3 -60 66
+wait 60
+shot z3_roof2
+cmd verity clear
+cmd tp @s 0.5 -60 -20 0 0
+cmd time set 18000
+cmd gamemode survival
+cmd verity stage hunt
+wait 60
+cmd tp @s 0.5 -60 -20 180 -12
+wait 100
+shot k1_hunt_start
+wait 40
+shot k2_hunt
+wait 30
+shot k3_hunt
+wait 20
+shot k4_hunt
+wait 12
+shot k5
+wait 8
+shot k6
+wait 8
+shot k7
+wait 8
+shot k8
+wait 60
+shot k9_after
+wait 200
+shot k10_morning
+quit

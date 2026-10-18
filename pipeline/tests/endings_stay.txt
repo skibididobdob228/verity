@@ -1,0 +1,18 @@
+# ending "stay": needs a normal world
+wait 140
+cmd time set 3000
+cmd verity stage lab
+wait 170
+cmd verity labtp names
+wait 60
+shot f0_names
+cmd verity labtp machine
+wait 60
+cmd verity use choice
+wait 90
+cmd verity use stay
+wait 60
+shot f1_stay
+wait 150
+shot f2_title
+quit

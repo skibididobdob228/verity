@@ -1,0 +1,38 @@
+# does he know the world? exact places, ores, biomes, mobs, recipes, the pointer on screen (normal world, seed 7; run with lang:ru_ru)
+wait 110
+cmd time set 6000
+cmd weather clear
+cmd gamemode survival
+cmd verity stage helper
+wait 20
+hold
+cmd summon minecraft:cow ~-20 ~ ~6
+cmd verity find где ближайшая деревня?
+wait 30
+shot l1_village
+cmd verity find где алмазы
+cmd verity find где крепость с порталом в край?
+wait 30
+shot l2_diamonds_stronghold
+cmd verity find где ближайшая вишнёвая роща?
+cmd verity find как скрафтить железную кирку
+wait 30
+shot l3_biome_recipe
+cmd verity find где адская крепость?
+cmd verity find где ближайшая корова?
+wait 30
+shot l4_fortress_cow
+cmd verity find где мой спавн и где я умер?
+cmd verity find где ближайший слизневой чанк?
+wait 30
+shot l5_spawn_slime
+chat Верити, как сделать факел?
+wait 300
+shot l6_ai_recipe
+chat Верити, где ближайшие руины троп?
+wait 300
+shot l7_ai_trail
+cmd tp @s ~ ~ ~ 180 0
+wait 10
+shot l8_pointer_turned
+quit

@@ -1,0 +1,65 @@
+# the scares that reach for the real computer: the consent screen, then each one; the pause menu; the note he keeps
+wait 80
+cmd tp @s 0.5 -60 0.5 0 0
+cmd time set 6000
+cmd verity stage possessive
+wait 40
+consent show
+wait 20
+shot c1_consent
+close
+cmd verity wall name
+wait 30
+shot c2_refused
+consent yes
+wait 20
+cmd verity wall name
+wait 60
+shot x1_name
+wait 100
+cmd verity wall clock
+wait 60
+shot x2_clock
+wait 100
+cmd verity wall uptime
+wait 60
+shot x3_uptime
+wait 60
+cmd verity wall screen
+wait 60
+shot x4_screen
+wait 100
+cmd verity wall gpu
+wait 60
+shot x5_gpu
+wait 100
+cmd verity wall worlds
+wait 60
+shot x6_worlds
+wait 100
+cmd verity wall title
+wait 60
+shot x7_title
+wait 100
+cmd verity wall crash
+wait 40
+shot x8_crash
+wait 40
+shot x9_joke
+wait 50
+shot x10_after_crash
+wait 80
+cmd verity wall photo
+wait 30
+shot x11_after_photo
+wait 100
+cmd verity note
+wait 60
+pause
+wait 8
+shot x12_pause
+wait 60
+shot x13_pause_later
+close
+wait 20
+quit

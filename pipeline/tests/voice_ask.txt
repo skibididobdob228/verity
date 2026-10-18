@@ -1,0 +1,17 @@
+# push-to-talk: a recorded question goes through the meter, whisper and on to him (normal world, seed 7)
+wait 110
+cmd time set 6000
+cmd verity stage helper
+wait 20
+hold
+voice ../pipeline/tests/voice/q1.wav
+wait 14
+shot v1_listening
+wait 40
+shot v2_thinking
+wait 260
+shot v3_answer
+voice ../pipeline/tests/voice/q2.wav
+wait 300
+shot v4_recipe
+quit

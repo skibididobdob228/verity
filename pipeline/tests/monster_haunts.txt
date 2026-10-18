@@ -1,0 +1,48 @@
+# the tall one in the haunts: crossing, at the window, in the doorway, rushing, rising
+wait 80
+cmd tp @s 0.5 -60 0.5 0 0
+cmd time set 6000
+cmd verity stage countdown
+wait 200
+cmd verity haunt crawl
+wait 14
+shot c1_crawl
+wait 8
+shot c2_crawl
+wait 60
+cmd fill -3 -60 6 3 -57 6 minecraft:oak_planks
+cmd fill -1 -59 6 1 -58 6 minecraft:glass
+cmd setblock 3 -60 3 minecraft:oak_door[half=lower,facing=west]
+cmd setblock 3 -59 3 minecraft:oak_door[half=upper,facing=west]
+cmd time set 18000
+cmd setblock 0 -60 2 minecraft:torch
+wait 40
+cmd verity haunt window
+wait 30
+shot w1_window
+wait 200
+cmd tp @s 0.5 -60 3.5 90 0
+cmd verity haunt doorway
+wait 20
+cmd tp @s 0.5 -60 3.5 -90 0
+wait 10
+shot d1_doorway
+wait 200
+cmd tp @s 0.5 -60 -10.5 180 0
+cmd verity haunt rush
+wait 10
+shot r1_rush
+wait 8
+shot r2_rush
+wait 8
+shot r3_rush
+wait 8
+shot r4_rush
+wait 80
+cmd verity haunt rise
+wait 20
+shot u1_rise
+wait 30
+shot u2_scream
+wait 40
+quit

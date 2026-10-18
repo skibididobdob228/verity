@@ -1,0 +1,11 @@
+# the window title scare, and the note with the address
+wait 80
+cmd verity stage possessive
+wait 20
+consent yes
+wait 20
+cmd verity wall title
+wait 160
+cmd verity note
+wait 60
+quit

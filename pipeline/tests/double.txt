@@ -1,0 +1,15 @@
+wait 80
+cmd time set 6000
+cmd tp @s 0.5 -60 0.5 0 0
+cmd verity stage watched
+wait 40
+cmd verity sanity 4
+wait 60
+cmd verity sanity see double
+wait 20
+face player
+wait 3
+shot d1_double
+wait 30
+shot d2_gone
+quit

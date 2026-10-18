@@ -1,0 +1,65 @@
+# sanity: the marks in the corner, what each level looks like, the things that are not there, what he says, the collapse
+wait 80
+cmd tp @s 0.5 -60 0.5 0 0
+cmd time set 6000
+cmd verity stage watched
+wait 330
+cmd verity sanity
+cmd verity sanity 2
+wait 90
+shot s2_level
+cmd verity sanity see shadow
+wait 5
+shot s2_shadow
+cmd verity sanity 3
+wait 100
+cmd verity sanity see balls
+wait 20
+face ball
+wait 4
+shot s3_balls
+cmd verity sanity 4
+wait 100
+cmd verity say help_weather_clear
+wait 25
+shot s4_subtitle
+cmd verity sanity see figure
+wait 16
+face monster
+wait 3
+shot s4_figure
+wait 30
+shot s4_figure_gone
+cmd verity sanity 5
+wait 100
+cmd verity sanity see chat
+cmd verity sanity see sound
+wait 30
+shot s5_level
+cmd time add 12000
+cmd verity sanity 6
+wait 120
+shot s6_level
+cmd tp @s 0.5 -60 0.5 0 0
+cmd verity sanity see charge
+wait 6
+shot s6_charge_a
+wait 5
+shot s6_charge_b
+wait 5
+shot s6_charge_c
+wait 4
+shot s6_charge_d
+wait 4
+shot s6_charge_e
+wait 60
+cmd tp @s 30.5 -60 30.5 0 0
+cmd gamemode survival
+cmd verity sanity 6
+wait 880
+shot s7_fainting
+wait 120
+shot s7_home
+cmd verity sanity
+wait 100
+quit

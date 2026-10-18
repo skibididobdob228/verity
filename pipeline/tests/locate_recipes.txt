@@ -1,0 +1,13 @@
+# recipes by name, with his own name in the question (normal world, seed 7)
+wait 110
+cmd verity stage helper
+wait 20
+cmd verity find Верити, как скрафтить печь?
+cmd verity find Верити, как сделать кирку?
+cmd verity find из чего делают золотое яблоко?
+cmd verity find как получить железный слиток?
+cmd verity find рецепт стола зачарований
+cmd verity find Верити, где мои вещи? я умер
+cmd verity find где ближайший житель?
+wait 40
+quit

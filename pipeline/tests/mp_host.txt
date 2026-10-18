@@ -1,0 +1,35 @@
+# multiplayer, the host (owner of Verity). Run with VERITY_LAB_GUEST=pipeline/tests/mp_guest.txt
+wait 80
+cmd time set 1000
+cmd tp @s 0.5 -60 0.5 0 5
+lan 25599
+cmd verity stage helper
+wait 20
+hold
+waitplayers 2
+wait 60
+cmd tp Guest 0.5 -60 4.5 180 0
+cmd tp @s 0.5 -60 0.5 0 5
+wait 120
+shot mh1_guest_arrived
+wait 260
+shot mh2_after_guest_chat
+cmd verity stage possessive
+wait 420
+shot mh3_rules_and_jealousy
+wait 160
+shot mh4_jealous
+cmd verity drop
+wait 60
+shot mh5_dropped
+wait 200
+shot mh6_guest_tried
+cmd gamemode survival Guest
+cmd time set 15000
+cmd verity stage hunt
+wait 200
+cmd tp Guest ~ ~ ~
+wait 200
+shot mh7_hunt
+wait 100
+quit

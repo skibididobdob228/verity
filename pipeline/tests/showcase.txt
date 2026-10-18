@@ -1,0 +1,31 @@
+# the showcase take (normal world, seed 7): parcel -> hello -> picked up -> AI answer -> countdown -> the night -> caught -> morning
+wait 110
+volume 1
+cmd time set 1000
+cmd weather clear
+cmd tp @s ~ ~ ~ 90 4
+wait 20
+cmd verity start
+wait 150
+cmd verity open
+wait 310
+cmd verity pickup
+wait 8
+hold
+wait 100
+chat Привет, Верити! Что ты умеешь?
+wait 230
+cmd verity stage countdown
+wait 175
+chat Что придёт?
+wait 75
+cmd time set 14500
+cmd gamemode survival
+cmd verity stage hunt
+wait 62
+cmd tp @s ~ ~ ~ 270 -10
+wait 150
+cmd tp @s ~ ~ ~ 90 0
+wait 170
+wait 280
+quit

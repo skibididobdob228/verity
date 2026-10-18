@@ -1,0 +1,34 @@
+# the monster's movement in daylight: idle twitches, the walk, the scream
+wait 80
+cmd time set 6000
+cmd tp @s 0.5 -60 0.5 0 -10
+gui off
+cmd summon verity:monster 0.5 -60 13
+wait 50
+shot a01_idle
+wait 9
+shot a02_idle
+wait 9
+shot a03_idle
+cmd tp @s 0.5 -60 -14 0 -10
+cmd verity monsterstate 1
+wait 30
+shot a04_walk
+wait 5
+shot a05_walk
+wait 5
+shot a06_walk
+wait 5
+shot a07_walk
+wait 5
+shot a08_walk
+wait 5
+shot a09_walk
+cmd verity monsterstate 2
+wait 10
+shot a10_scream
+wait 5
+shot a11_scream
+wait 5
+shot a12_scream
+quit

@@ -1,0 +1,13 @@
+# the two older fourth-wall scares: the city from the time zone, a running program by name
+wait 80
+cmd verity stage possessive
+wait 20
+cmd verity city
+wait 20
+consent yes
+wait 30
+cmd verity city
+wait 120
+cmd verity apps
+wait 120
+quit

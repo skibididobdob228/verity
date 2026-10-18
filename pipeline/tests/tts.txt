@@ -1,0 +1,18 @@
+# the runtime voice (Piper inside the game, with intonation): three unscripted lines and one baked line for comparison
+wait 100
+cmd time set 6000
+cmd tp @s 0.5 -60 0.5 0 5
+cmd verity stage helper
+wait 60
+musicvol 0
+volume 1
+wait 20
+cmd verity say Ты ведь вернёшься завтра? Я буду ждать. Очень долго ждать...
+wait 220
+cmd verity say Да.
+wait 80
+cmd verity say Куда ты собрался? Мы же так хорошо гуляли!
+wait 160
+cmd verity say q_comeback
+wait 100
+quit

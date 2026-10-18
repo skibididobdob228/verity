@@ -1,0 +1,32 @@
+# the parcel, the greeting, an AI conversation
+wait 80
+cmd time set 1000
+cmd tp @s 0.5 -60 0.5 0 5
+wait 10
+cmd verity start
+wait 70
+shot st1_box
+cmd verity open
+wait 34
+shot st2_box_shaking
+wait 15
+shot st3_box_pop
+wait 25
+shot st4_ball_out
+wait 60
+shot st5_intro_talking
+wait 30
+shot st5b_intro_talking
+wait 200
+chat Привет! Ты кто такой?
+wait 110
+shot st6_ai_reply
+wait 60
+chat Где тут поблизости найти железо?
+wait 140
+shot st7_ai_iron
+wait 80
+chat Дай мне, пожалуйста, немного хлеба
+wait 140
+shot st8_ai_give
+quit

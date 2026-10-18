@@ -1,0 +1,35 @@
+# going to bed while something is watching: you wake in the dark and it is over the bed; then you cannot sleep
+wait 80
+cmd tp @s 0.5 -60 0.5 0 30
+cmd time set 18000
+cmd verity stage watched
+wait 300
+cmd setblock 0 -60 2 minecraft:red_bed[facing=south,part=foot]
+cmd setblock 0 -60 3 minecraft:red_bed[facing=south,part=head]
+slot 4
+wait 10
+use
+wait 30
+shot bed1_sleeping
+wait 30
+shot bed2_black
+wait 18
+shot bed3_t78
+wait 6
+shot bed4_t84
+wait 6
+shot bed5_t90
+wait 5
+shot bed6_t95
+wait 3
+shot bed7_t98
+wait 3
+shot bed8_t101
+wait 110
+shot bed9_after
+cmd tp @s 0.5 -60 0.5 0 30
+wait 5
+use
+wait 20
+shot bed10_cannot_sleep
+quit
