@@ -372,7 +372,7 @@
       "profile": "flat"
     },
     "far_snap": {
-      "text": "Я сказал, вернись!",
+      "text": "Я сказал, вернись! Ладно. Я сам за тобой приду.",
       "emotion": "angry",
       "profile": "rage"
     },
@@ -677,7 +677,7 @@
       "profile": "ball"
     },
     "san_faint": {
-      "text": "Ты упал. Я принёс тебя домой. Не благодари.",
+      "text": "Ты упал. Я стоял рядом, пока ты лежал. Совсем рядом.",
       "emotion": "smug",
       "profile": "ball"
     },
@@ -1035,6 +1035,11 @@
       "text": "Спасибо, что выбрали Верити. Хорошего дня.",
       "emotion": "neutral",
       "profile": "operator"
+    },
+    "stalk_morning": {
+      "text": "Ты видел меня ночью? Я стоял, пока ты смотрел. Ты же знаешь правило.",
+      "emotion": "creepy",
+      "profile": "flat"
     }
   },
   "pools": {

@@ -109,7 +109,7 @@ final class Haunt {
         if (level == 0 || p.isSpectator() || p.level() != story.overworld()) return;
         boolean night = story.isNight();
         if (cooldown > 0) { cooldown -= night ? 2 : 1; return; }
-        if (story.speaking() || watcher() != null || p.isSleeping() || story.monster() != null) return;
+        if (story.speaking() || watcher() != null || p.isSleeping() || story.monster() != null || story.stalker().active()) return;
         long t = story.overworld().getDayTime() % 24000L;
         boolean dusk = t > 11800 && t < 13000;
         List<String> pool = new ArrayList<>(List.of("steps", "whisper"));
@@ -125,6 +125,13 @@ final class Haunt {
         if (level >= 2) { pool.add("crawl"); pool.add("window"); }
         if (level >= 2 && night) pool.add("doorway");
         if (level >= 3 && night) { pool.add("rush"); pool.add("rise"); }
+        // him, for real: not something only you see, but the thing itself, walking about the world
+        BlockPos home = story.home();
+        boolean indoors = home != null && p.blockPosition().distSqr(home) < 14 * 14 && !p.level().canSeeSky(p.blockPosition().above());
+        if (level >= 2 && night) { pool.add("stalk"); pool.add("stalk"); pool.add("stalk"); pool.add("lights"); }
+        if (level >= 2 && !night && rnd().nextInt(3) == 0) pool.add("stalk");
+        if (level >= 3 && night) { pool.add("chase"); pool.add("chase"); if (indoors) { pool.add("prowl"); pool.add("prowl"); pool.add("prowl"); } }
+        if (level >= 2 && night && indoors) pool.add("prowl");
         pool.removeIf(last::equals);
         String pick = pool.get(rnd().nextInt(pool.size()));
         focus = p.getUUID();
@@ -132,6 +139,7 @@ final class Haunt {
             story.addSanity(4f);
             last = pick;
             cooldown = Math.max(35, 200 - level * 35) + rnd().nextInt(50);       // more often the further it has gone
+            if (pick.equals("stalk") || pick.equals("chase") || pick.equals("prowl")) cooldown += 90;     // after the real thing, a breather
         } else {
             cooldown = 8;
         }
@@ -159,6 +167,10 @@ final class Haunt {
             case "doorway" -> doorway(p);
             case "rush" -> rush(p);
             case "rise" -> rise(p);
+            case "stalk" -> story.stalker().start(Stalker.Kind.STALK, p);
+            case "chase" -> story.stalker().start(Stalker.Kind.CHASE, p);
+            case "prowl" -> story.stalker().start(Stalker.Kind.PROWL, p);
+            case "lights" -> story.isNight() && story.stalker().snuffAround(p, 14, 4) > 0;
             default -> false;
         };
     }

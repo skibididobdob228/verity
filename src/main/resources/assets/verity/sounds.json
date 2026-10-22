@@ -1448,6 +1448,13 @@
    }
   ]
  },
+ "voice.stalk_morning": {
+  "sounds": [
+   {
+    "name": "verity:voice/stalk_morning"
+   }
+  ]
+ },
  "voice.dynamic": {
   "sounds": [
    {

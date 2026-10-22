@@ -111,6 +111,7 @@ public final class Brain {
             msgs.add(message(m[0], m[0].equals("assistant") ? "{\"say\": " + quote(m[1]) + "}" : m[1]));
         }
         body.add("messages", msgs);
+        dump(body);
 
         Thread t = new Thread(() -> {
             Reply reply;
@@ -300,7 +301,7 @@ public final class Brain {
 
     /** Models copy themselves: once the slogan is in the history it would close every line. Outside its turn it is cut. */
     private static final java.util.regex.Pattern SLOGAN = java.util.regex.Pattern.compile(
-            "\\s*(Верити\\s*[—–-]\\s*(твой |ваш |ваш личный |твой личный |личный )?(фирменный )?(друг-помощник|помощник)[.!]?(\\s*Знает вс[её][.!]?)?|[Вв]ерити\\s+знает\\s+вс[её]™?[.!]?|(?<=[.!?]\\s)Знает вс[её]™?[.!]?)(?=\\s|$)",
+            "\\s*((?<=^|[.!?]\\s)Верити\\s*[—–-]\\s*(твой |ваш |ваш личный |твой личный |личный )?(фирменный )?(друг-помощник|помощник)[.!]?(\\s*Знает вс[её][.!]?)?|[Вв]ерити\\s+знает\\s+вс[её]™?[.!]?|(?<=[.!?]\\s)Знает вс[её]™?[.!]?)(?=\\s|$)",
             java.util.regex.Pattern.UNICODE_CHARACTER_CLASS);
 
     private static Reply withoutSlogan(Reply r) {
@@ -308,12 +309,23 @@ public final class Brain {
         return s.length() < 4 ? r : r.withSay(s);
     }
 
-    /** Small models garble numbers: if the answer lost the coordinates he looked up, they are put back word for word. */
+    /** Development: with a folder verity/prompts next to the world, every request is saved there to replay against other models. */
+    private static void dump(JsonObject body) {
+        java.nio.file.Path dir = java.nio.file.Path.of("verity", "prompts");
+        if (!java.nio.file.Files.isDirectory(dir)) return;
+        try {
+            java.nio.file.Files.writeString(dir.resolve(System.currentTimeMillis() + ".json"), body.toString());
+        } catch (Exception ignored) {
+        }
+    }
+
+        /** Small models garble numbers: if the answer lost the coordinates he looked up, they are put back word for word. */
     private static Reply withCoords(Reply r, Locator.Result found) {
         Locator.Found target = found.target();
         if (target == null || r.say().isBlank()) return r;
         String x = Integer.toString(target.pos().getX()), z = Integer.toString(target.pos().getZ());
         if (r.say().contains(x) && r.say().contains(z)) return r;
+        if (!r.say().matches("(?s).*\\d.*")) return r;            // no numbers at all: he chose not to say where (refusing to send you to a village)
         String say = r.say().replaceAll("\\s*$", "");
         return r.withSay(say + (say.endsWith(".") || say.endsWith("!") || say.endsWith("?") ? " " : ". ") + "Точно: " + target.coords() + ".");
     }

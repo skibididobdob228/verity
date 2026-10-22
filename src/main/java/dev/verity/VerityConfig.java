@@ -28,7 +28,7 @@ public final class VerityConfig {
         AI_MODEL = b.comment("The model name as the server knows it, e.g. gemma3:12b for Ollama.").define("model", "gemma3:12b");
         AI_API_KEY = b.comment("API key for the openai provider. Leave empty to use the VERITY_API_KEY environment variable.").define("apiKey", "");
         AI_MAX_TOKENS = b.defineInRange("maxTokens", 220, 32, 2000);
-        AI_TEMPERATURE = b.defineInRange("temperature", 0.85, 0.0, 2.0);
+        AI_TEMPERATURE = b.comment("Lower = steadier, more sensible answers; higher = wilder. 0.6 suits gemma3:12b.").defineInRange("temperature", 0.6, 0.0, 2.0);
         AI_TIMEOUT_SECONDS = b.defineInRange("timeoutSeconds", 25, 3, 120);
         CHAT_NEEDS_NAME = b.comment("true: he only answers messages that mention him (\"Верити, ...\"). false: he answers everything said near him.")
                 .define("chatNeedsName", false);

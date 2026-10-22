@@ -47,6 +47,11 @@ final class Canon {
     // ------------------------------------------------------------------ once a second
     static void think(Story s, ServerPlayer p) {
         supportTick(s, p);
+        // the morning after he walked about for real, he mentions it
+        if (s.flag("stalked") && !s.isNight() && s.dayTime() > 600 && s.dayTime() < 4000 && !s.speaking() && s.speaker() != null) {
+            s.clearFlag("stalked");
+            s.say(null, "stalk_morning");
+        }
         Story.Stage st = s.stage();
         if (st.ordinal() >= Story.Stage.WATCHED.ordinal() && st != Story.Stage.HUNT) eastVillage(s, p);
         if (st == Story.Stage.POSSESSIVE) {

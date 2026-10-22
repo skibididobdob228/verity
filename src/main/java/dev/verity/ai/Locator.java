@@ -651,21 +651,32 @@ public final class Locator {
     private static String shaped(ShapedRecipe r, ItemStack result) {
         int w = r.getWidth(), h = r.getHeight();
         List<Ingredient> ing = r.getIngredients();
+        // said the way a person explains it, so the model has nothing to rearrange: "весь верхний ряд — булыжник; средний ряд: палка в центре"
+        String[] rows = h == 3 ? new String[] {"верхний", "средний", "нижний"} : h == 2 ? new String[] {"верхний", "нижний"} : new String[] {"средний"};
+        String[] cols = w == 3 ? new String[] {"слева", "в центре", "справа"} : w == 2 ? new String[] {"слева", "в центре"} : new String[] {"в центре"};
         StringBuilder grid = new StringBuilder();
         java.util.Map<String, Integer> totals = new java.util.LinkedHashMap<>();
         for (int y = 0; y < h; y++) {
-            grid.append(y == 0 ? "" : " / ");
+            List<String> cells = new ArrayList<>();
+            java.util.Set<String> kinds = new java.util.HashSet<>();
             for (int x = 0; x < w; x++) {
                 Ingredient in = ing.get(y * w + x);
-                String n = in.isEmpty() ? "пусто" : ingredient(in);
-                grid.append(x == 0 ? "" : ", ").append(n.replace(" (или другие такие же)", ""));
-                if (!in.isEmpty()) totals.merge(n, 1, Integer::sum);
+                if (in.isEmpty()) continue;
+                String n = ingredient(in);
+                totals.merge(n, 1, Integer::sum);
+                String shortName = n.replace(" (или другие такие же)", "");
+                kinds.add(shortName);
+                cells.add(shortName + " " + cols[x]);
             }
+            if (cells.isEmpty()) continue;
+            grid.append(grid.isEmpty() ? "" : "; ");
+            if (cells.size() == 3 && kinds.size() == 1) grid.append("весь ").append(rows[y]).append(" ряд — ").append(kinds.iterator().next());
+            else grid.append(rows[y]).append(" ряд: ").append(String.join(", ", cells));
         }
         StringBuilder total = new StringBuilder();
         totals.forEach((n, c) -> total.append(total.isEmpty() ? "" : ", ").append(n).append(" ×").append(c));
         return "Крафт «" + result.getHoverName().getString() + "»" + (result.getCount() > 1 ? " (выходит " + result.getCount() + " шт.)" : "")
-                + (w > 2 || h > 2 ? " на верстаке 3×3" : " (можно прямо в инвентаре 2×2)") + ". Нужно: " + total + ". Раскладка по рядам сверху вниз: " + grid + ".";
+                + (w > 2 || h > 2 ? " на верстаке 3×3" : " (можно прямо в инвентаре 2×2)") + ". Нужно: " + total + ". Раскладка (остальные клетки пустые): " + grid + ".";
     }
 
     private static String list(List<Ingredient> ing) {

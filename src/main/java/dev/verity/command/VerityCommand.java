@@ -201,7 +201,7 @@ public final class VerityCommand {
                 })));
     }
 
-    private static final String[] HAUNTS = {"steps", "whisper", "knock", "stare", "join", "watcher", "behind", "dark", "flash", "echo", "visit", "nightmare", "crawl", "window", "doorway", "rush", "rise"};
+    private static final String[] HAUNTS = {"steps", "whisper", "knock", "stare", "join", "watcher", "behind", "dark", "flash", "echo", "visit", "nightmare", "crawl", "window", "doorway", "rush", "rise", "stalk", "chase", "prowl", "lights"};
 
     private static int wall(CommandContext<CommandSourceStack> c, int which) throws com.mojang.brigadier.exceptions.CommandSyntaxException {
         boolean ok = Story.get(c.getSource().getLevel()).wallScare(c.getSource().getPlayerOrException(), which);

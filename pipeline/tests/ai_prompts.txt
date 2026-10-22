@@ -1,0 +1,36 @@
+# collects real prompts (with run/verity/prompts present) to compare language models offline
+wait 110
+cmd time set 4000
+cmd verity stage helper
+wait 20
+hold
+cmd give @s minecraft:wooden_pickaxe
+cmd give @s minecraft:bread 3
+cmd summon minecraft:cow ~-5 ~ ~2
+chat Верити, привет! Кто ты такой?
+wait 220
+chat Верити, что мне делать первым делом в новом мире?
+wait 220
+chat Верити, меня зовут Миша, я люблю строить из берёзы. Запомни.
+wait 220
+chat Верити, где ближайшая деревня?
+wait 220
+chat Верити, как сделать каменную кирку?
+wait 220
+chat Верити, скоро ночь, мне страшно. Что делать?
+wait 220
+chat Верити, а что у меня сейчас в руке?
+wait 220
+chat Верити, как меня зовут и что я люблю строить?
+wait 220
+chat Верити, расскажи анекдот
+wait 220
+cmd verity stage possessive
+wait 200
+chat Верити, можно я схожу в деревню к жителям?
+wait 220
+chat Верити, почему ты меня не отпускаешь?
+wait 220
+chat Верити, ты вообще кто на самом деле?
+wait 220
+quit

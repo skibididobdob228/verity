@@ -78,7 +78,7 @@ public final class MonsterAnim {
         time += dt;
         int state = m.getState();
         float stateTime = (m.getStateTicks() + partialTick) / 20f;
-        hunting = state == VerityMonster.STATE_HUNT;
+        hunting = state == VerityMonster.STATE_HUNT || state == VerityMonster.STATE_WALK;
 
         // --- things that follow the game every frame
         Player target = m.level().getNearestPlayer(m, 48);

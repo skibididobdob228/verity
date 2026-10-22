@@ -116,6 +116,10 @@ public final class Story extends SavedData {
     private final List<Timed> queue = new ArrayList<>();
     private final Brain brain = new Brain();
     private final Haunt haunt = new Haunt(this);
+    private final Stalker stalker = new Stalker(this);
+    Stalker stalker() { return stalker; }
+    /** Lights he put out tonight, "pos|blockstate id"; they come back at dawn. */
+    public final List<String> snuffed = new ArrayList<>();
     private int diarySeconds;
     private long ticks, speechFreeAt, lastStateSent;
     private int farCooldown, doorCooldown, callCooldown, stillTicks, remarkCooldown = 600;
@@ -343,11 +347,14 @@ public final class Story extends SavedData {
         }
         brain.tick(this);
         haunt.tick();
+        try { stalker.tick(); } catch (Exception e) { VerityMod.LOGGER.error("Verity stalker failed", e); stalker.vanish(stalker.monster()); }
         if (stage == Stage.HUNT) huntTick();
         if (stage == Stage.LAB) Lab.tick(this);
         if (ticks % 100 == 37) {
             try { dev.verity.ai.Locator.trackPlaces(this); } catch (Exception e) { VerityMod.LOGGER.error("Verity place tracking failed", e); }
         }
+        if (ticks % 600 == 11) stalker.sweep(overworld());
+        if (ticks % 20 == 0 && !snuffed.isEmpty() && dayTime() < 1500 && !stalker.active()) stalker.restoreLights();
         if (ticks % 20 == 0) {
             try { sanityTick(); } catch (Exception e) { VerityMod.LOGGER.error("Verity sanity tick failed", e); }
             try { think(); } catch (Exception e) { VerityMod.LOGGER.error("Verity story tick failed", e); }
@@ -798,6 +805,7 @@ public final class Story extends SavedData {
         removeItems();
         serial++;
         ballId = monsterId = null; owner = null;
+        stalker.restoreLights(); stalker.vanish(stalker.monster());
         flags.clear(); memory.clear(); facts.clear(); places.clear(); queue.clear(); journal.clear(); summary = "";
         anger = 0; ending = ""; labPos = null; home = null; possessiveSince = -1; minds.clear(); breaking.clear(); worstLevel = 0; saidLevel = 0;
         setStage(Stage.NONE);
@@ -1215,9 +1223,7 @@ public final class Story extends SavedData {
             if (VerityConfig.MONSTER_KILLS.get() && mm != null) {
                 p.hurt(p.damageSources().mobAttack(mm), 1000f);
             } else {
-                BlockPos h = home != null ? home : overworld().getSharedSpawnPos();
-                p.teleportTo(overworld(), h.getX() + 0.5, h.getY() + 0.2, h.getZ() + 0.5, p.getYRot(), 0);
-                p.setHealth(Math.max(2f, p.getHealth() * 0.3f));
+                p.setHealth(Math.max(2f, p.getHealth() * 0.3f));                // you wake up where he left you
             }
             if (mm != null) { mm.discard(); monsterId = null; }
             endHunt(p, "caught");
@@ -1275,18 +1281,14 @@ public final class Story extends SavedData {
         // rule one: do not go far
         if (p.level() == overworld()) {
             double far = Math.sqrt(p.blockPosition().distSqr(home));
-            if (far > 170) {
-                note("игрок ушёл слишком далеко от дома; ты вернул его силой");
+            if (far > 170 && farCooldown == 0) {
+                // no teleport home: he comes out after you himself, for real, and you have to get back on your own feet
+                note("игрок ушёл слишком далеко от дома; ты вышел за ним сам, в истинном облике");
                 say(null, "far_snap");
-                fx(p, FxPayload.BLACKOUT, 1f, 80);
-                fx(p, FxPayload.SHAKE, 1f, 40);
+                fx(p, FxPayload.SHAKE, 0.8f, 30);
                 slight();
-                BlockPos h = home;
-                later(30, () -> {
-                    p.teleportTo(overworld(), h.getX() + 0.5, h.getY() + 0.2, h.getZ() + 0.5, p.getYRot(), 0);
-                    later(70, () -> say(null, "home_again"));
-                });
-                farCooldown = 30;
+                later(40, () -> { if (!stalker.active()) stalker.start(isNight() ? Stalker.Kind.CHASE : Stalker.Kind.STALK, p); });
+                farCooldown = 240;
             } else if (far > 110 && farCooldown == 0 && !speaking()) {
                 note("игрок далеко отошёл от дома, ты попросил его вернуться");
                 say(null, Lines.pick("far_warn"));
@@ -1456,20 +1458,31 @@ public final class Story extends SavedData {
     private void faint(ServerPlayer p) {
         breaking.remove(p.getUUID());
         boolean his = owner != null && owner.equals(p.getUUID());
-        note(his ? "рассудок игрока не выдержал: он потерял сознание, а очнулся дома; ты сказал, что принёс его"
+        note(his ? "рассудок игрока не выдержал: он потерял сознание и очнулся там же, где упал; ты всё это время стоял над ним"
                 : "рассудок другого игрока, " + p.getGameProfile().getName() + ", не выдержал: он потерял сознание");
         fx(p, FxPayload.STATIC, 1f, 40);
         fx(p, FxPayload.BLACKOUT, 1f, 150);
-        BlockPos h = his && home != null ? home : p.getRespawnPosition() != null && p.getRespawnDimension() == Level.OVERWORLD ? p.getRespawnPosition()
-                : home != null ? home : overworld().getSharedSpawnPos();
+        later(140, () -> {                     // when the dark lifts, the first thing you see is him, standing over you
+            if (p.level() != overworld() || stalker.active() || monster() != null) return;
+            Vec3 look = Vec3.directionFromRotation(0, p.getYRot());
+            VerityMonster m = ModEntities.MONSTER.get().create(overworld());
+            m.moveTo(p.getX() + look.x * 2.2, p.getY(), p.getZ() + look.z * 2.2, p.getYRot() + 180f, 0);
+            m.setState(VerityMonster.STATE_PEER);
+            m.addTag("verity_watcher");
+            overworld().addFreshEntity(m);
+            sound(m, ModSounds.GROWL.get(), 1f, 0.5f);
+            later(70, () -> {
+                overworld().sendParticles(ParticleTypes.LARGE_SMOKE, m.getX(), m.getY() + 1.5, m.getZ(), 30, 0.4, 1, 0.4, 0.02);
+                m.discard();
+            });
+        });
         later(30, () -> {
-            p.teleportTo(overworld(), h.getX() + 0.5, h.getY() + 0.2, h.getZ() + 0.5, p.getYRot(), 0);
             minds.put(p.getUUID(), Math.max(sanityFloor(p), 52f));
             if (his) worstLevel = sanityLevel(p);
             setDirty();
             syncState(true);
         });
-        if (his) later(170, () -> { if (speaker() != null) say(null, "san_faint"); });
+        if (his) later(240, () -> { if (speaker() != null) say(null, "san_faint"); });
     }
 
     // ------------------------------------------------------------ when his person does not come back
@@ -1861,7 +1874,7 @@ public final class Story extends SavedData {
     /** @return a reason the player may not sleep, or null */
     @Nullable
     public Component onTrySleep(ServerPlayer p) {
-        if (stage == Stage.HUNT || stage == Stage.COUNTDOWN && daysLeft <= 0) {
+        if (stage == Stage.HUNT || stage == Stage.COUNTDOWN && daysLeft <= 0 || stalker.active()) {
             return Component.literal("Вы не можете уснуть: " + NAME + " рядом.").withStyle(ChatFormatting.DARK_RED);
         }
         Component awake = haunt.onTrySleep(p);
@@ -2014,6 +2027,7 @@ public final class Story extends SavedData {
         for (Tag t : tag.getList("flags", Tag.TAG_STRING)) s.flags.add(t.getAsString());
         for (Tag t : tag.getList("facts", Tag.TAG_STRING)) s.facts.add(t.getAsString());
         for (Tag t : tag.getList("places", Tag.TAG_STRING)) s.places.add(t.getAsString());
+        for (Tag t : tag.getList("snuffed", Tag.TAG_STRING)) s.snuffed.add(t.getAsString());
         s.summary = tag.getString("summary");
         for (Tag t : tag.getList("journal", Tag.TAG_COMPOUND)) {
             CompoundTag j = (CompoundTag) t;
@@ -2061,6 +2075,9 @@ public final class Story extends SavedData {
         ListTag pl = new ListTag();
         for (String s : places) pl.add(StringTag.valueOf(s));
         tag.put("places", pl);
+        ListTag sn = new ListTag();
+        for (String s : snuffed) sn.add(StringTag.valueOf(s));
+        tag.put("snuffed", sn);
         ListTag mem = new ListTag();
         for (String[] m : memory) {
             CompoundTag c = new CompoundTag();

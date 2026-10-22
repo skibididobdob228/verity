@@ -36,7 +36,8 @@ import net.minecraft.world.phys.AABB;
 /** Verity's true form: 6.5 metres of something that only wanted you to stay. */
 public class VerityMonster extends PathfinderMob {
     /** PEER is WATCH brought down on all fours, face level with a doorway or a bed. */
-    public static final int STATE_WATCH = 0, STATE_HUNT = 1, STATE_SCREAM = 2, STATE_CALM = 3, STATE_RISE = 4, STATE_PEER = 5;
+    /** WALK: going somewhere he has been sent (around the house, away into the dark), not after anyone. */
+    public static final int STATE_WATCH = 0, STATE_HUNT = 1, STATE_SCREAM = 2, STATE_CALM = 3, STATE_RISE = 4, STATE_PEER = 5, STATE_WALK = 6;
 
     private static final EntityDataAccessor<Integer> STATE = SynchedEntityData.defineId(VerityMonster.class, EntityDataSerializers.INT);
     private static final EntityDataAccessor<Integer> STATE_TICKS = SynchedEntityData.defineId(VerityMonster.class, EntityDataSerializers.INT);
@@ -89,6 +90,14 @@ public class VerityMonster extends PathfinderMob {
         Player target = prey == null ? null : level().getPlayerByUUID(prey);
         if (target == null || !target.isAlive() || target.isSpectator()) target = level().getNearestPlayer(this, 160.0);
         if (target == null) return;
+        if (getState() == STATE_WALK) {                          // steered from outside: keep the path, just sound like it
+            double moved = position().distanceTo(new Vec3(xo, yo, zo));
+            if (moved > 0.05 && onGround() && --stepTimer <= 0) {
+                stepTimer = 12;
+                level().playSound(null, getX(), getY(), getZ(), ModSounds.STEP.get(), SoundSource.HOSTILE, 1.3f, 0.75f + random.nextFloat() * 0.15f);
+            }
+            return;
+        }
         getLookControl().setLookAt(target, 40f, 40f);
         if (getState() != STATE_HUNT || target.isSpectator()) {
             getNavigation().stop();

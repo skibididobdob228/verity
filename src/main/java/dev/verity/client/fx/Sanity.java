@@ -132,18 +132,18 @@ public final class Sanity {
             hearThings(mc, l);
         }
         if (l >= 2 && --shadowTimer <= 0) {
-            shadowTimer = (50 - l * 6 + RNG.nextInt(15)) * 20;
+            shadowTimer = 2 * (50 - l * 6 + RNG.nextInt(15)) * 20;
             shadowTicks = 9 + RNG.nextInt(8);
             shadowSide = RNG.nextBoolean() ? 1 : -1;
         }
         if (l >= 3 && --ballTimer <= 0) {
-            ballTimer = (55 - l * 6 + RNG.nextInt(20)) * 20;
+            ballTimer = 2 * (55 - l * 6 + RNG.nextInt(20)) * 20;
             if (count(BALL) == 0 && count(DOUBLE) == 0) {
                 if (RNG.nextInt(3) == 0) seeDouble(mc); else seeBalls(mc, l);
             }
         }
         if (l >= 4 && --figureTimer <= 0) {
-            figureTimer = (70 - l * 8 + RNG.nextInt(25)) * 20;
+            figureTimer = 2 * (70 - l * 8 + RNG.nextInt(25)) * 20;
             if (count(FIGURE) == 0 && count(CHARGER) == 0 && noRealMonster(mc)) seeFigure(mc, l);
         }
         if (l >= 4 && --hurtTimer <= 0) {
@@ -156,7 +156,7 @@ public final class Sanity {
             falseChat(mc);
         }
         if (l >= 6 && --chargeTimer <= 0) {
-            chargeTimer = (32 + RNG.nextInt(22)) * 20;
+            chargeTimer = 2 * (32 + RNG.nextInt(22)) * 20;
             if (count(CHARGER) == 0 && noRealMonster(mc)) seeCharge(mc);
         }
     }

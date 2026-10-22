@@ -1,0 +1,50 @@
+# him, for real: stalking (moves only unseen), the torches going out, a chase, and prowling round a house
+wait 110
+cmd tp @s 0.5 -60 0.5 0 0
+cmd gamemode survival
+cmd time set 18000
+cmd verity stage possessive
+cmd effect give @s minecraft:resistance 99999 4 true
+wait 60
+cmd fill -6 -60 -6 6 -60 6 minecraft:torch
+cmd fill -5 -60 -5 5 -60 5 minecraft:air
+wait 10
+shot r0_torches
+cmd verity haunt stalk
+wait 60
+shot r1_dark
+cmd tp @s 0.5 -60 0.5 180 0
+wait 40
+shot r2_seen_behind
+wait 100
+shot r3_still_there
+cmd tp @s 0.5 -60 0.5 0 0
+wait 200
+cmd tp @s 0.5 -60 0.5 180 0
+wait 3
+shot r4_closer
+wait 300
+shot r5_after
+cmd verity clear
+wait 40
+cmd verity haunt chase
+wait 40
+shot r6_chase
+wait 200
+shot r7_chase_on
+cmd verity clear
+cmd fill -4 -60 -4 4 -56 4 minecraft:oak_planks hollow
+cmd fill -3 -59 -4 -1 -58 -4 minecraft:glass
+cmd setblock 1 -60 -4 minecraft:oak_door[half=lower,facing=north]
+cmd setblock 1 -59 -4 minecraft:oak_door[half=upper,facing=north]
+cmd setblock -2 -60 2 minecraft:torch
+cmd tp @s 0.5 -60 0.5 180 0
+wait 40
+cmd verity haunt prowl
+wait 200
+cmd tp @s -2 -60 -2 180 0
+wait 200
+shot r8_prowl
+wait 300
+shot r9_prowl_late
+quit

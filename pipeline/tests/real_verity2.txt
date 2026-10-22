@@ -1,0 +1,43 @@
+# the chase and the prowl, watched from the right side
+wait 110
+cmd tp @s 0.5 -60 0.5 0 0
+cmd gamemode survival
+cmd time set 18000
+cmd verity stage possessive
+cmd effect give @s minecraft:resistance 99999 4 true
+wait 200
+cmd verity haunt chase
+wait 20
+cmd tp @s 0.5 -60 0.5 180 0
+wait 20
+shot q1_chase_start
+wait 60
+shot q2_chase_run
+wait 100
+shot q3_chase_end
+wait 200
+cmd fill -4 -60 -4 4 -56 4 minecraft:oak_planks hollow
+cmd fill -3 -59 -4 -1 -58 -4 minecraft:glass
+cmd fill 4 -59 -1 4 -58 1 minecraft:glass
+cmd setblock 1 -60 -4 minecraft:oak_door[half=lower,facing=north]
+cmd setblock 1 -59 -4 minecraft:oak_door[half=upper,facing=north]
+cmd setblock -2 -60 2 minecraft:torch
+cmd setblock 3 -60 -6 minecraft:torch
+cmd tp @s 0.5 -60 0.5 180 0
+wait 40
+cmd verity haunt prowl
+wait 300
+cmd tp @s 0.5 -60 0.5 180 0
+wait 2
+shot q4_prowl_north
+cmd tp @s 0.5 -60 0.5 -90 0
+wait 2
+shot q5_prowl_east
+wait 300
+cmd tp @s 0.5 -60 0.5 180 0
+wait 2
+shot q6_prowl_north
+cmd tp @s 0.5 -60 0.5 -90 0
+wait 2
+shot q7_prowl_east
+quit
